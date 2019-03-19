@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Member Withdrawal</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link href="http://wrd2.is.my/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="member-withdraw-form.css">
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12 reg-form" style="padding: 10px 0 50px 0;">
+            <div class="signup form-peice">
+
+                <!-- Balance card -->
+                <div class="balance-container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="wallet-balance-card">
+                                <small>Current Wallet Balance </small>
+                                <p style="font-size: 3em;">87550.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="withdraw-value-card">
+                                <small>Withdraw Value </small>
+                                <p style="font-size: 3em;">1000.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="balance-after-withdraw-card">
+                                <small>Balance After Withdraw</small>
+                                <p style="font-size: 3em;">850.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end of  Balance card -->
+
+                <!-- Withdraw Form  -->
+                <form class="withdraw-form" action="#" method="poSst">
+                    <fieldset class="field-container">
+                        <legend>
+                            <h3 class="form-section"> Withdrawal Details </h3>
+                        </legend>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="wallettype">Wallet Type</label>
+                                <select id="wallettype" name="wallettype" class="wallettype">
+                                    <option value=""></option>
+                                    <option value="option1">Bonus Wallet</option>
+                                    <option value="option2">World Coin</option>
+                                    <option value="option3">Register Wallet</option>
+                                </select>
+                                <span class="error"></span>
+                                <i class="glyphicon glyphicon-chevron-down" id="select-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" name="username" id="username" class="username" value="den test 123123">
+                                <span class="error"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="withdrawvalue">Withdrawal Value</label>
+                                <input type="number" value="10" name="withdrawvalue" id="withdrawvalue" class="withdrawvalue">
+                                <span class="error"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="admincharge">Admin Charge</label>
+                                <input type="number" value="0.05" name="admincharge" id="admincharge" class="admincharge">
+                                <span class="error"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="secdpassword">Secondary Password:</label>
+                                <input type="password" name="secdpassword" id="secdpassword" class="secdpassword">
+                                <span class="error"></span>
+                                <span id="show_hide_password">
+                                    <i class="glyphicon glyphicon-eye-close" aria-hidden="true" type="button" id="eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="paymenttype">Payment Type</label>
+                                <select id="paymenttype" name="paymenttype" class="paymenttype">
+                                    <option value=""></option>
+                                    <option value="option1">Maybank Account</option>
+                                    <option value="option2">Cimb Account</option>
+                                    <option value="option3">OCBC Account</option>
+                                    <option value="option3">Public Bank Account</option>
+                                    <option value="option3">Islamic Bank Account</option>
+                                </select>
+                                <span class="error"></span>
+                                <i class="glyphicon glyphicon-chevron-down" id="select-arrow"></i>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="field-container">
+                        <legend>
+                            <h3 class="form-section"> Bank Account Info </h3>
+                        </legend>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="beneficiary">Beneficiary</label>
+                                <input type="text" name="beneficiary" id="beneficiary" class="beneficiary" value="den test 123123">
+                                <span class="error"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="bankaccnum">Bank Account Number</label>
+                                <input type="text" name="bankaccnum" id="bankaccnum" class="bankaccnum" value="den test 123123">
+                                <span class="error"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="bankname">Bank Name</label>
+                                <input type="text" name="bankname" id="bankname" class="bankname" value="den test 123123">
+                                <span class="error"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="branchname">Branch Name</label>
+                                <input type="text" name="branchname" id="branchname" class="branchname" value="den test 123123">
+                                <span class="error"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="CTA" style="text-align: center;">
+                        <input type="submit" value="Process To Confirmation" id="submit">
+                    </div>
+                </form>
+                <!-- end of Withdraw Form -->
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="member-withdraw-form.js"></script>
+</body>
+
+</html>

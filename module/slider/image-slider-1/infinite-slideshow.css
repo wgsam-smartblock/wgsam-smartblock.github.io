@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(44, 43, 43);
+    opacity: .6;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.wrapper {
+    height: 644px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.sliding-background {
+    background: url(./img/banner.png) repeat-x;
+    height: 644px;
+    width: 5076px;
+    animation: slide 5s linear infinite;
+}
+
+.logo-ovl {
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-2821px, 0, 0);
+    }
+}

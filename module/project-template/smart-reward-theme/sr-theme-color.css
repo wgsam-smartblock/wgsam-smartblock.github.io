@@ -1,0 +1,198 @@
+
+/* Smart Reward Theme Color */
+
+:root{
+    /* og - default orange  theme, bl - blue theme, rd - red theme*/
+
+    /* -----Header item----- */
+    /* top bar item */
+    --top-bar-icon-color:#448AFF;   /* og - #FF9600 , bl - #448AFF ,rd - #FF0036 */
+    --top-bar-txt-color:#424242;    /* og - #7C7C7C , bl - #424242 ,rd - #424242*/
+
+
+    /* top header bar item */
+    --top-header-bar-color:#F3F6FB;   /* og - #191B1F , bl - #F3F6FB ,rd - #FF0036 */
+    --top-header-btn-color:#448AFF;   /* og - #FF9600 , bl - #448AFF ,rd - #000000 */
+    --top-header-btn-txt-color:#FFFFFF;   /* All- #FFFFFF */
+    --top-header-mycart-txt-color:#424242;   /* og - #FFFFFF , bl - #424242 ,rd - #F3F6FB */
+    --top-header-item-txt-color:#0069C0;   /* og - #FF9600 , bl - #0069C0 ,rd - #EEEEEE */
+
+    /* top menu bar item */
+    --top-menu-bar-color:#448AFF;   /* og - #353940 , bl - #448AFF ,rd - #000000 */
+    --top-menu-bar-icon-color:#FFFFFF;   /* og - #FF9600 , bl - #FFFFFF ,rd - #FF0036 */
+    --top-menu-bar-txt-color:#FFFFFF;   /* og - #FF9600 , bl - #FFFFFF ,rd - #FF0036 */
+    --top-menu-bar-hover-box-color:#0055E3;   /* og - #FF9600 , bl - #0055E3 ,rd - #424242 */
+    --top-menu-bar-hover-txt-color:#FFFFFF;  /* All - #FFFFFF */
+
+    /* -----End of Header item----- */
+
+
+    /* -----Footer item----- */
+    /* footer bar */
+    --footer-bar-color:#448AFF;  /* og - #353940 , bl - #FFFFFF ,rd - #FF0036 */
+    --footer-bar-icon-color:#FFFFFF;  /* og - #FF9600 , bl - #FFFFFF ,rd - #FF0036 */
+    --footer-bar-txt-color:#FFFFFF;  /* All - #FFFFFF */
+    --footer-bar-email-submit-btn-color:#0055E3;  /* og - #FF9600 , bl - #0055E3 ,rd - #FF0036 */
+    
+     /* footer cantainer */
+     --footer-container-color:#F3F6FB;  /* og - #191B1F , bl - #F3F6FB ,rd - #424242 */
+     --footer-container-title-txt-color:#448AFF;  /* og - #FF9600 , bl - #448AFF ,rd - #FFFFFF */
+     --footer-container-txt-color:#7C7C7C;  /* og - #A8A8A8, bl - #7C7C7C ,rd - #BDBDBD */
+     --footer-container-icon-color:#448AFF;  /* og - #FF9600, bl - #448AFF ,rd - #BDBDBD */
+     --footer-container-bottom-line-color:#448AFF;  /* og - #A8A8A8 , bl - #448AFF ,rd - #A6A7C1 */
+
+     /* -----End of Footer item----- */
+
+
+    /* -----Landing Page item-----  */
+    /* info-porfile-contianer */
+    --info-prof-contaier-box-color:#FFFFFF;   /* All - #FFFFFF */
+    --info-prof-contaier-border-box-color:#D9D9D9;   /* All - #D9D9D9 */
+    --info-prof-icon-color:#448AFF;   /* og - #FF9600 , bl - #448AFF ,rd - #FF0036 */
+    --info-prof-lable-txt-color:#191B1F;   /* All - #191B1F */
+    --info-prof-data-txt-color:#448AFF;   /* og - #FF9600 , bl - #448AFF ,rd - #FF0036 */
+
+    /* news title */
+    --news-title-txt-color:#448AFF;   /* og - #FF9600 , bl - #448AFF ,rd - #FF0036 */
+    --news-title-txt-underline-color:#448AFF;  /* og - #FF9600 , bl - #448AFF ,rd - #FF0036 */
+    /* -----End of Landing Page item-----  */
+}
+
+/* -----Header item----- */
+ /* top nav bar item */
+.sr-top-bar-dropdown-icon-color{
+    color: var(--top-bar-icon-color);
+}
+
+.sr-top-bar-icon-color{
+    color: var(--top-bar-icon-color);
+}
+
+.sr-top-bar-txt-color{
+    color: var(--top-bar-txt-color);
+}
+
+/* top header bar item */
+.sr-top-header-bar-color{
+    background-color: var(--top-header-bar-color);
+}
+
+.sr-top-header-type-select-btn-color{
+    background-color: var(--top-header-btn-color);
+}
+
+.sr-top-header-type-select-txt-color{
+    background-color: var(--top-header-btn-txt-color);
+}
+
+.sr-top-header-type-select-btn-icon-color{
+    background-color: var(--top-header-btn-txt-color);
+}
+
+.sr-top-header-my-cart-txt-color{
+    color: var(--top-header-mycart-txt-color);
+}
+
+.sr-top-header-item-txt-color{
+    color: var(--top-header-item-txt-color);
+}
+
+/* top menu bar item */
+.sr-top-menu-bar-color{
+    background: var(--top-menu-bar-color);
+}
+
+.sr-top-menu-bar-icon-color{
+    color: var(--top-menu-bar-icon-color);
+}
+
+.sr-top-menu-bar-txt-color{
+    color: var(--top-menu-bar-txt-color);
+}
+
+.sr-top-menu-bar-hover-box-color{
+    background-color: var(--top-menu-bar-hover-box-color);
+}
+
+.sr-top-menu-bar-hover-txt-color{
+    color:var(--top-menu-bar-hover-txt-color);
+}
+ /* -----End of Header item----- */
+
+
+/* -----Footer item----- */
+/* footer bar */    
+.sr-footer-bar-color{
+    background-color: var(--footer-bar-color);
+}
+
+.sr-footer-bar-icon-color{
+    color: var(--footer-bar-icon-color);
+}
+
+.sr-footer-bar-txt-color{
+    color: var(--footer-bar-txt-color);
+}
+
+.sr-footer-bar-email-submit-btn-color{
+    background-color: var(--footer-bar-email-submit-btn-color);
+}
+
+/* footer cantainer */
+.sr-footer-container-color{
+    background-color: var(--footer-container-color);
+}
+
+.sr-footer-container-title-txt-color{
+    color: var( --footer-container-title-txt-color);
+}
+
+.sr-footer-container-txt-color{
+    color: var(--footer-container-txt-color);
+}
+
+.sr-footer-container-icon-color{
+    color: var(--footer-container-icon-color);
+}
+
+.sr-footer-container-bottom-line-color{
+    color: var(--footer-container-bottom-line-color);
+}
+/* -----End of Footer item----- */
+
+
+/* -----Landing Page item-----  */
+/* info-porfile-contianer */
+.sr-ld-info-prof-container-box-color{
+    background-color: var(--info-prof-contaier-box-color);
+ }
+
+.sr-ld-info-prof-container-border-box-color{
+    background-color: var(--info-prof-contaier-border-box-color);
+}
+
+.sr-ld-info-prof-icon-color{
+    background-color: var(--info-prof-icon-color);
+}
+
+.sr-ld-info-prof-label-txt-color{
+    background-color: var(--info-prof-lable-txt-color);
+}
+
+.sr-ld-info-prof-data-txt-color{
+    background-color: var(--info-prof-data-txt-color);
+}
+
+/* news title */
+.sr-ld-news-title-txt-color{    
+    color:var(--news-title-txt-color);
+}
+
+.sr-ld-news-title-txt-underline-color{
+    color:var(--news-title-txt-underline-color);
+}
+/* -----End of Landing Page item-----  */
+
+
+
+

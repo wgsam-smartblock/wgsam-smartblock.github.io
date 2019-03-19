@@ -1,0 +1,73 @@
+html {
+   width: 99.99vw;
+    height: 99.99vh;
+    overflow-x: hidden
+}
+
+body{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+/*---------- START of Carousel ----------*/
+.item {
+    /* height: 600px; */
+}
+
+.carousel-caption{
+    color:black;
+}
+
+.carousel-caption h3{
+    font-weight: 700;
+    font-size:50px;
+    letter-spacing: 5px;
+}
+
+.carousel-caption p{
+    font-size:25px;
+    padding-left:70px;
+}
+/*---------- END of Carousel ----------*/
+
+.center{
+    text-align: center;
+}
+
+.bitivo-content-contianer{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#fff;
+    padding:50px 0;
+}
+
+.bitivo-txt-container h1{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.bitivo-txt-container p{
+    font-size: 1.3em;    
+    text-align: justify;
+}
+
+.content-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-txt{
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.text-container{
+    padding-top:25px;
+    text-align: justify;
+}

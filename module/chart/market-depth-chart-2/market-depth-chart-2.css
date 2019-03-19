@@ -1,0 +1,11 @@
+body{
+    background-color: #092332;
+}
+
+#market-depth-chart {
+    min-width: 310px;
+    max-width: 1040px;
+    height: 400px;
+    margin: 0 auto;
+}
+  

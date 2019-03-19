@@ -1,0 +1,144 @@
+@import 'https://use.fontawesome.com/releases/v5.0.10/css/all.css';
+@import 'https://fonts.googleapis.com/css?family=Lato:300';
+
+:root{
+	--setting-btn-color:#2B3643;
+	--menu-panel-color:#2B3643;
+	--setting-txt-color:#F4F4F4;
+	--setting-hover-color:#384155;
+	--setting-hover-txt-color:#bebebe;
+
+    --default-theme-color:#353940;
+    --a-theme-color:#448AFF;
+    --b-theme-color:#FF0036;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	background-color: #c7b7a7;
+}
+
+.container {
+    display: inline-block;
+    margin: 30px 20px;
+}
+
+.setting-btn{
+    border-radius: 50%;
+    padding: 8px; 
+    background-color: var(--setting-btn-color);
+}
+
+.setting-icon{
+    width:25px;
+    height:25px; 
+    vertical-align:middle
+}
+
+.custom-slct-panel {
+	margin: 15px auto 15px;
+    max-width: 200px;
+}
+
+.setting-panel {
+    text-align: right;
+}
+
+.setting-panel :hover { 
+	cursor: pointer 
+}
+
+.close-icon{
+    width:15px;
+    height:15px; 
+}
+
+.header-padding-row{
+	padding:5px 15px 5px 15px;
+}
+
+.padding-row{
+    padding:15px;
+}
+
+.opt-panel {
+	display:none;
+    margin-top: 8px;
+    padding-bottom: 10px;
+	background-color: var(--menu-panel-color);
+	border-radius: 3px;
+    box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.2 );
+}
+
+.opt-panel-header{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	border-bottom:1px solid #646161;
+}
+
+.opt-panel .opt-panel-header-column-left {
+    color: var(--setting-txt-color);
+    font-size: 13px;
+    font-weight: 400;
+	width: 85%;
+    margin-left: 10px;
+}
+
+.opt-panel .opt-panel-header-column-right {
+	width: 15%;
+	padding: 10px 8px;
+}
+
+.opt-panel .opt-panel-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.opt-panel .opt-panel-column-left {
+	float: left;
+	width: 35%;
+	margin-left: 10px;
+}
+
+.opt-panel .opt-panel-column-right {
+	float: right;
+	width: 65%;
+	padding: 10px 8px;
+	/* text-align: right; */
+}
+
+.square {
+	border-radius: 1px;
+	border: 0.5px solid #fff;
+    width: 40px;
+    height: 40px;
+}
+
+.black{
+    background:var(--default-theme-color);
+}
+
+.blue{
+    background:var(--a-theme-color);
+}
+
+.red{
+    background:var(--b-theme-color);
+}
+
+.opt-panel a {
+	color: var(--setting-txt-color);
+	font-size: 14px;
+    font-weight: 400;
+	text-decoration: none;
+}
+
+.opt-panel:hover .opt-panel-row:hover { background: var(--setting-hover-color)}
+
+.opt-panel:hover a.opt-panel-row:hover { color: var(--setting-hover-txt-color); }
+
+

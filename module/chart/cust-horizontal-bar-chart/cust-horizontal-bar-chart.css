@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,em,img,ol,ul,li,label{
+  margin:0;
+  padding:0;
+  border:0;
+  vertical-align:baseline
+}
+
+body{
+  line-height:1
+}
+
+ol,ul{
+  list-style:none
+}
+
+body {
+  background-color: #092332;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 3em;
+  font-size: 14px;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.chartbox{
+  width: 50%;
+  float:left;
+  position: relative; 
+  min-height: 1px;
+}
+  
+/* -------left chart item------- */
+.bar-chart-left {
+  width: 250px;
+  color: #fff;
+  margin: 2em 0;
+}
+
+.bar-chart-txt-left{
+ right: 0;
+ font-size: 1.4em;
+}
+
+.bar-chart-left li {
+  background-color: #2581a5;
+  border-left: 4px solid #15ccfa;
+  margin: 0 0 2px;
+  height: 65px;
+  position: relative;
+}
+
+.bar-chart-left span, .bar-chart-left em {
+  display: block;
+  line-height: 28px;
+  position: absolute;
+}
+
+.bar-chart-left li > span, .bar-chart-left em {
+  bottom: 5px;
+  right: 0;
+}
+
+.bar-chart-left em {
+  background: #15ccfa;
+  width: 0;
+  transition: all 2s ease-in-out;
+}
+
+.bar-chart-left span {
+  z-index: 2;
+  padding: 0 10px;
+}
+
+/* -------right chart------- */
+.bar-chart-right {
+  width: 250px;
+  color: #fff;
+  margin: 2em 0;
+}
+
+.bar-chart-txt-right{
+  left:0;
+  font-size: 1.4em;
+}
+
+.bar-chart-right li {
+  background-color: #c4902f;
+  border-right: 4px solid #f3ad14;
+  margin: 0 0 2px;
+  height: 65px;
+  position: relative;
+}
+
+.bar-chart-right li:last-child {
+  margin: 0;
+}
+
+.bar-chart-right span, .bar-chart-right em {
+  display: block;
+  line-height: 28px;
+  position: absolute;
+}
+
+.bar-chart-right li > span, .bar-chart-right em {
+  bottom: 5px;    
+  left: 0;
+  right: 0;
+}
+
+.bar-chart-right li > span span {
+  color: #20b9e0;
+  right: -40px;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+.bar-chart-right em {
+  background: #f3ad14;
+  width: 0;
+  transition: all 2s ease-in-out;
+}
+
+.bar-chart-right span {
+  z-index: 2;
+  padding: 0 10px;
+}
+  

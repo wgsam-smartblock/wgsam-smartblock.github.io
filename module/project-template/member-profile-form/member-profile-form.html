@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Member Profile </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://wrd2.is.my/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="member-profile-form.css">
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<body style="margin-top: 30px; margin-bottom: 30px;">
+    <div class="container">
+        <!-- tab nav in left side -->
+        <div class="row">
+            <div class="col-md-12 form-peice">
+                <h3>Overview</h3>
+                <hr/>
+                <div class="col-md-3">
+                    <ul class="nav nav-tabs tabs-left sideways">
+                        <li class="active">
+                            <a href="#tab_personal_info" data-toggle="tab">
+                                <i class="fa fa-cog"></i> Personal Info
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab_bank_info" data-toggle="tab">
+                                <i class="fa fa-bank"></i> Bank Info
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab_chg_avatar" data-toggle="tab">
+                                <i class="fa fa-picture-o"></i> Change Avatar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab_chg_pswd" data-toggle="tab">
+                                <i class="fa fa-lock"></i> Change Password
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab_reset_secd_pswd" data-toggle="tab">
+                                <i class="fa fa-lock"></i> Reset Secondary Password
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-9">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_personal_info">
+                            <div class="section-box">
+                                <div class="profile">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="profile-info-header" style="display:flex;">
+                                                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="" style="border-radius: 50%; width: 120px; height: 120px; float: left;"
+                                                />
+                                                <div style="overflow: hidden; padding: 15px 0 0 30px;">
+                                                    <h1 class="profile-title-bd">
+                                                        John
+                                                        <br/>Anderson
+                                                        <span class="profile-preword">Active</span>
+                                                    </h1>
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <i class="fa fa-map-marker"></i>
+                                                            Malaysia
+                                                        </li>
+                                                        <li>
+                                                            Join Date: 20/09/2018
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star font-yellow-crusta"></i>
+                                                            Member
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="profile-list">
+                                                <li class="clearfix">
+                                                    <strong class="title">Referral Name</strong>
+                                                    <span class="cont">wrd001</span>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <strong class="title">User Name</strong>
+                                                    <span class="cont">Dentest</span>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <strong class="title">Full Name (As Per IC/Passport No.)</strong>
+                                                    <span class="cont">Den</span>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <strong class="title">IC/Passport No.</strong>
+                                                    <span class="cont">123131313131</span>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <strong class="title">Mobile Number</strong>
+                                                    <span class="cont">
+                                                        <input type="text" placeholder="+1 646 580 DEMO (6284)" class="form-control" id="mobile_no" name="mobile_no" value="1126155649">
+                                                    </span>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <strong class="title">Email</span>
+                                                    </strong>
+                                                    <span class="cont">
+                                                        <input type="email" placeholder="john@sample.com" class="form-control" id="email1" name="email1" value="den@iscity.com.my">
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_bank_info">Bank Info</div>
+                        <div class="tab-pane" id="tab_chg_avatar">Change Avatar</div>
+                        <div class="tab-pane" id="tab_chg_pswd">Change Password</div>
+                        <div class="tab-pane" id="tab_reset_secd_pswd">Reset Secondary Password</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of tab nav in left side -->
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+    <!-- tab nav at top -->
+    <div class="container">
+        <div class="col-md-12 form-peice">
+            <div class="scroller scroller-left">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </div>
+            <div class="scroller scroller-right">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </div>
+            <div class="wrapper">
+                <ul class="tabs-simple list" id="myTab">
+                    <li class="active">
+                        <a class="tabs-simple-tab is-active" href="#tab1" data-toggle="tab">Personal Info</a>
+                    </li>
+                    <li>
+                        <a class="tabs-simple-tab" href="#tab2" data-toggle="tab">Bank Info</a>
+                    </li>
+                    <li>
+                        <a class="tabs-simple-tab" href="#tab3" data-toggle="tab">Change Avatar</a>
+                    </li>
+                    <li>
+                        <a class="tabs-simple-tab" href="#tab4" data-toggle="tab">Change Password</a>
+                    </li>
+                    <li>
+                        <a class="tabs-simple-tab" href="#tab5" data-toggle="tab">Reset Secondary Password</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs-simple-bar">
+                <div class="tabs-simple-bar-mask"></div>
+            </div>
+            <div class="tab-content" style="padding-top:20px;">
+                <div class="tab-pane active" id="tab1">
+                    <div class="col-md-12 reg-form">
+                        <div class="">
+                            <form class="personal-info-form" action="#" method="post">
+                                <fieldset class="field-container">
+                                    <legend>
+                                        <h3 class="form-section"> Personal Info </h3>
+                                    </legend>
+                                    <div class="section-box">
+                                        <div class="profile">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="profile-info-header">
+                                                        <div class="avatar-upload">
+                                                            <div class="avatar-edit">
+                                                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                                                <label for="imageUpload"></label>
+                                                            </div>
+                                                            <div class="avatar-preview">
+                                                                <div id="imagePreview" style="background-image: url(https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg);">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div style="overflow: hidden; padding: 28px 0 0 30px;">
+                                                            <h1 class="profile-title-bd">
+                                                                John
+                                                                <br/>Anderson
+                                                                <span class="profile-preword">Active</span>
+                                                            </h1>
+                                                            <ul class="list-inline">
+                                                                <li>
+                                                                    <i class="fa fa-map-marker"></i>
+                                                                    Malaysia
+                                                                </li>
+                                                                <li>
+                                                                    Join Date: 20/09/2018
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa fa-star font-yellow-crusta"></i>
+                                                                    Member
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <div class="txt-label">Sponsor Name</div>
+                                                    <span class="txt-info">Sammy</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <div class="txt-label">User Name</div>
+                                                    <span class="txt-info">Dentest</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="country">Country</label>
+                                                    <select id="country" name="country" class="country">
+                                                        <!-- <option value="">Malaysia</option> -->
+                                                        <option value="option1">Malaysia</option>
+                                                        <option value="option2">option 2</option>
+                                                        <option value="option3">option 3</option>
+                                                        <option value="option4">option 4</option>
+                                                        <option value="option5">option 5</option>
+                                                    </select>
+                                                    <span class="error"></span>
+                                                    <i class="glyphicon glyphicon-chevron-down" id="select-arrow"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="fullname">Full Name (As Per IC/Passport No.)</label>
+                                                    <input type="text" name="fullname" id="fullname" class="fullname" value="den test 123123">
+                                                    <span class="error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="icno">IC/Passport No.</label>
+                                                    <input type="text" name="icno" id="icno" class="icno" value="12313131313">
+                                                    <span class="error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="mobilenum">Mobile Number</label>
+                                                    <input type="text" name="mobilenum" id="mobilenum" class="mobilenum" value="01222211222">
+                                                    <span class="error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="email">Email</label>
+                                                    <input type="text" name="email" id="email" class="email" value="den@iscity.com.my">
+                                                    <span class="error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="scndpassword1">Secondary Password</label>
+                                                    <input type="password" name="scndpassword1" id="scndpassword1" class="scndpassword1">
+                                                    <span class="error"></span>
+                                                    <span id="show_hide_password">
+                                                        <i class="glyphicon glyphicon-eye-close" aria-hidden="true" type="button" id="eye"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="CTA" style="text-align: center;">
+                                    <input type="submit" value="Submit" id="submitPersonalInfo">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <div class="col-md-12 reg-form">
+                        <div class="">
+                            <form class="bank-info-form" action="#" method="post">
+                                <fieldset class="field-container">
+                                    <legend>
+                                        <h3 class="form-section"> Bank Info </h3>
+                                    </legend>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="bankcountry">Bank Country</label>
+                                            <select id="bankcountry" name="bankcountry" class="bankcountry">
+                                                <!-- <option value="">Malaysia</option> -->
+                                                <option value="option1">Malaysia</option>
+                                                <option value="option2">option 2</option>
+                                                <option value="option3">option 3</option>
+                                                <option value="option4">option 4</option>
+                                                <option value="option5">option 5</option>
+                                            </select>
+                                            <span class="error"></span>
+                                            <i class="glyphicon glyphicon-chevron-down" id="select-arrow"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="bankname">Bank Name</label>
+                                            <input type="text" name="bankname" id="bankname" class="bankname" value="Maybank">
+                                            <span class="error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="bankaccnum">Bank Account Number</label>
+                                            <input type="text" name="bankaccnum" id="bankaccnum" class="bankaccnum" value="0122112212">
+                                            <span class="error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="bankaccname">Bank Account Name</label>
+                                            <input type="text" name="bankaccname" id="bankaccname" class="bankaccname" value="Maybank">
+                                            <span class="error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="branchname">Branch Name</label>
+                                            <input type="text" name="branchname" id="branchname" class="branchname" value="Maybank1">
+                                            <span class="error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="scndpassword2">Secondary Password</label>
+                                            <input type="password" name="scndpassword2" id="scndpassword2" class="scndpassword2">
+                                            <span class="error"></span>
+                                            <span id="show_hide_password2">
+                                                <i class="glyphicon glyphicon-eye-close" aria-hidden="true" type="button" id="eye2"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="CTA" style="text-align: center;">
+                                    <input type="submit" value="Submit" id="submitBankInfo">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tab3">Change Avatar</div>
+                <div class="tab-pane" id="tab4">Change Password</div>
+                <div class="tab-pane" id="tab5">Reset Secondary Password</div>
+            </div>
+        </div>
+    </div>
+    <!-- end of tab nav at top -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="member-profile-form.js"></script>
+</body>
+
+</html>

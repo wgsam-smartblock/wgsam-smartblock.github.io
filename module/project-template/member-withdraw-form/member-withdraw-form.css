@@ -1,0 +1,268 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+body {
+    margin-top: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #f7edd5 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* ----- Balance Card ----- */
+.balance-container {
+    padding: 0 40px;
+    margin: 0;
+}
+
+.wallet-balance-card {
+    margin: 1em 0;
+    border: 1px solid silver;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 1em 1.5em 0em;
+    background: #5a91bf;
+    font-family: "Oswald";
+    letter-spacing: 1px;
+    box-shadow: 0 7px 55px rgba(0, 0, 0, 0.12), 2px 3px 9px 0px rgba(0, 0, 0, 0.24);
+}
+
+.withdraw-value-card {
+    margin: 1em 0;
+    border: 1px solid silver;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 1em 1.5em 0em;
+    background: lightcoral;
+    font-family: "Oswald";
+    letter-spacing: 1px;
+    box-shadow: 0 7px 55px rgba(0, 0, 0, 0.12), 2px 3px 9px 0px rgba(0, 0, 0, 0.24);
+}
+
+.balance-after-withdraw-card {
+    margin: 1em 0;
+    border: 1px solid silver;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 1em 1.5em 0em;
+    background: darkseagreen;
+    font-family: "Oswald";
+    letter-spacing: 1px;
+    box-shadow: 0 7px 55px rgba(0, 0, 0, 0.12), 2px 3px 9px 0px rgba(0, 0, 0, 0.24);
+}
+
+
+input {
+    outline: none !important;
+}
+
+.txt-lable {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.txt-info {
+    display: block;
+    padding: 10px 0;
+    color: #444;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+}
+
+.field-container {
+    margin: 1em 0;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: .35em .625em 2em;
+}
+
+.form legend {
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+legend {
+    margin-bottom: 0 !important;
+    max-width: fit-content;
+    border-bottom: none !important;
+}
+
+.side-padding {
+    padding: 0 13px 0 13px;
+}
+
+.reg-form {
+    position: relative;
+}
+
+.form-section {
+    font-weight: 300;
+    color: black;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.spr-name {
+    font-weight: 300;
+    color: black;
+}
+
+.reg-form .form-peice {
+    background: #fff;
+    min-height: 480px;
+    margin-top: 30px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    color: #bbbbbb;
+    padding: 30px 0 60px;
+}
+
+.reg-form form {
+    padding: 0 40px;
+    margin: 0;
+}
+
+.reg-form form .form-group {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.reg-form form .form-group.hasError input {
+    border-color: #f95959 !important;
+}
+
+.reg-form form .form-group.hasError label {
+    color: #f95959 !important;
+}
+
+.reg-form form label {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    transform: translateY(40px);
+    transition: all 0.4s;
+    cursor: text;
+    z-index: -1;
+}
+
+.reg-form form label.active {
+    transform: translateY(10px);
+    font-size: 10px;
+}
+
+.reg-form form input:not([type=submit]) {
+    background: none;
+    outline: none;
+    border: none;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1;
+}
+
+.reg-form form select:not([type=submit]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1;
+}
+
+.reg-form form input:not([type=submit]).hasError {
+    border-color: #f95959;
+}
+
+.reg-form form select:not([type=submit]).hasError {
+    border-color: #f95959;
+}
+
+.reg-form form span.error {
+    color: #f95959;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    display: none;
+}
+
+.reg-form form input[type=password] {
+    color: #f95959;
+}
+
+.reg-form form .CTA {
+    margin-top: 30px;
+}
+
+.reg-form form .CTA input {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    background: #f95959;
+    color: #fff;
+    border-radius: 30px;
+    margin-right: 20px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* .reg-form form .CTA a.switch:hover {
+    color: #f95959;
+} */
+
+.reg-form form .CTA input:hover {
+    background: #7a7a7a;
+}
+
+#eye,
+#eye2,
+#eye3 {
+    background: #fff;
+    color: #bbbbbb;
+    float: right;
+    position: absolute;
+    right: 1%;
+    top: 43px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#select-arrow {
+    background: #fff;
+    color: #bbbbbb;
+    float: right;
+    position: absolute;
+    right: 1%;
+    top: 43px;
+}

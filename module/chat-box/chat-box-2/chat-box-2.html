@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat with IRONMAN</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="chat-box-2.css">
+</head>
+
+<body>
+    <!-- Floating Chat Icon -->
+    <div id="chat-circle" class="btn btn-raised" style="display:none;" onclick="expand()">
+        <div id="chat-overlay"></div>
+        <i class="material-icons">message</i>
+    </div>
+
+    <!-- Chat Box -->
+    <div class='chatbox'>
+        <div class='chatbox__header'>
+            <figure class="avatar">
+                <img
+                    src="https://scontent.fkul2-1.fna.fbcdn.net/v/t1.0-1/p160x160/43612951_1983102335068647_8550882288328507392_n.jpg?_nc_cat=109&_nc_ht=scontent.fkul2-1.fna&oh=e636a858570664839777c954ad4d47f6&oe=5CBF62EB" />
+            </figure>
+            <div class='title'>
+                Wg Sam
+            </div>
+
+            <span class="chat-box-toggle" onclick="expand()">
+                <i class="material-icons">close</i>
+            </span>
+        </div>
+        <div class='chatbox__body'>
+            <div class='message receive'>
+                <img
+                    src="https://scontent.fkul2-1.fna.fbcdn.net/v/t1.0-1/p160x160/43612951_1983102335068647_8550882288328507392_n.jpg?_nc_cat=109&_nc_ht=scontent.fkul2-1.fna&oh=e636a858570664839777c954ad4d47f6&oe=5CBF62EB" />
+                <div class='message_text'>
+                    Hello There
+                </div>
+            </div>
+        </div>
+        <div class='chatbox__input'>
+            <input placeholder='Type message...'>
+            <button class="sendAttachment">
+                <img src="img/attach3.png" width="24" height="24" />
+            </button>
+            <button class="sendMsg" onclick="sendMsg()">
+                <svg height='24' viewbox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'>
+                    <path d='M2.01 21L23 12 2.01 3 2 10l15 2-15 2z'></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+    <script src="chat-box-2.js"></script>
+</body>
+
+</html>

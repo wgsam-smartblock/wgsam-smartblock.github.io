@@ -1,0 +1,351 @@
+body {
+  background: #ff9966;
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3em;
+}
+
+h1 {
+  color: white;
+  font-size: 3em;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+}
+
+/* Floating Chat icon */
+
+#chat-circle {
+  position: fixed;
+  z-index: 1;
+  bottom: 50px;
+  right: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* background: #5A5EB9; */
+  /* background: linear-gradient(120deg, rgb(36, 138, 82), rgb(37, 114, 135)); */
+  /* width: 50px;
+  height: 50px;   */
+  border-radius: 50%;
+  color: white;
+  padding: 25px;
+  cursor: pointer;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.6), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+#chat-overlay {
+  background: rgba(126, 24, 24, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: none;
+}
+
+/* Chat Box */
+
+.chatbox {
+  background: #fafafa;
+  min-height: 450px;
+  width: 300px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.21), 0px 30px 20px -10px rgba(0, 0, 0, 0.2), 0px 60px 20px -30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 2;
+}
+
+.chatbox__header {
+  width: 100%;
+  height: 50px;
+  background: #ff9966;
+  background: linear-gradient(to left, #ff5e62, #ff9966);
+  display: flex;
+  align-items: center;
+}
+
+.chatbox__header .title {
+  color: #fff;
+  text-align: center;
+}
+
+.chatbox__header .avatar {
+  float: left;
+  margin: 10px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.chatbox__header .avatar img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.chatbox__header .chat-box-toggle {
+  position: absolute;
+  fill: white;
+  transition: .3s ease-in-out;
+}
+
+.chatbox__header .chat-box-toggle:hover {
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+  transition: .3s ease-in-out;
+}
+
+.chatbox__body {
+  height: 350px;
+  width: 100%;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+  padding: 10px 10px 20px;
+}
+
+.chatbox__body .message {
+  display: block;
+  width: auto;
+  margin: 5px;
+  align-self: flex-start;
+  flex-direction: row;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.chatbox__body .message img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  -webkit-animation: image 0.2s;
+  animation: image 0.2s;
+}
+
+.chatbox__body .message.receive {
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+.chatbox__body .message.receive .message_text {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  background: #fff;
+  animation: starkMessage .2s;
+  -webkit-animation: starkMessage 0.2s;
+}
+
+.chatbox__body .message.receive .message_text:before {
+  position: absolute;
+  content: " ";
+  left: -5px;
+  bottom: 0;
+  border-right: solid 10px #fff;
+  border-top: solid 10px transparent;
+  z-index: 0;
+}
+
+.chatbox__body .message.receive img {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+
+.chatbox__body .message.sender {
+  color: white;
+  align-self: flex-end;
+  padding-top: 5px;
+  padding-right: 30px;
+}
+
+.chatbox__body .message.sender .message_text {
+  margin-right: 10px;
+  background: #ff9966;
+  background: linear-gradient(to left, #ff5e62, #ff9966);
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 99;
+  animation: starkMessage .2s;
+  -webkit-animation: starkMessage 0.2s;
+}
+
+.chatbox__body .message.sender .message_text:after {
+  position: absolute;
+  content: " ";
+  right: -5px;
+  bottom: 0;
+  border-left: solid 10px #ff5e62;
+  border-top: solid 10px transparent;
+  z-index: 0;
+}
+
+.chatbox__body .message.sender img {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+}
+
+.chatbox__input {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  height: 60px;
+  border-top: .5px solid #efefef;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.chatbox__input input {
+  flex: 3;
+  padding: 1em 1em;
+  outline: none;
+  border: 0;
+  letter-spacing: .1em;
+}
+
+.chatbox__input svg {
+  fill: #ff9966;
+}
+
+.chatbox__input button {
+  outline: none;
+  border: 0;
+  flex: 1;
+  background: white;
+}
+
+.chatbox__input button:active {
+  transform: translateY(2px);
+}
+
+/* Input placeholder */
+
+::-webkit-input-placeholder {
+  color: #dedede;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #dedede;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #dedede;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #dedede;
+  opacity: 1;
+}
+
+.chat-box-toggle {
+  position: absolute;
+  z-index: 1;
+  top: 9px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.message_text span {
+  display: inline-block;
+  background-color: #B6B5BA;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 5px;
+  animation: bob 2s infinite;
+}
+
+.message_text span:nth-child(1) {
+  animation-delay: -1s;
+}
+
+.message_text span:nth-child(2) {
+  animation-delay: -0.85s;
+}
+
+.message_text span:nth-child(3) {
+  animation-delay: -0.7s;
+  margin-right: 0;
+}
+
+/* ----- Animation ----- */
+
+@keyframes bob {
+  10% {
+    transform: translateY(-10px);
+    background-color: #9E9DA2;
+  }
+  50% {
+    transform: translateY(0);
+    background-color: #B6B5BA;
+  }
+}
+
+@-webkit-keyframes starkMessage {
+  from {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  80% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes starkMessage {
+  from {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  80% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes image {
+  from {
+    bottom: -50px;
+  }
+  to {
+    bottom: -15px;
+  }
+}
+
+@keyframes image {
+  from {
+    bottom: -50px;
+  }
+  to {
+    bottom: -15px;
+  }
+}

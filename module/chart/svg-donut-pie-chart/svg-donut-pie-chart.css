@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+body {
+  background-color: #092332;
+  padding: 3em;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.donut-pie-container{
+  padding: 10px;
+}
+
+.single-chart {
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-height: 150px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #163748;
+  stroke-width: 2.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: rgb(89, 189, 147);
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.center-txt{
+  font-family: sans-serif;
+  font-size: 0.4em;
+  text-anchor: middle;
+}
+
+.percentage {
+  font-family: sans-serif;
+  font-size: 0.3em;
+  text-anchor: middle;
+}
+
+.green-color{
+  fill: rgb(89, 189, 147);
+}
+
+.grey-color{
+  fill: #4D6370;
+}

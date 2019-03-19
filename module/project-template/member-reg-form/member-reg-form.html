@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Member Registration Form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://wrd2.is.my/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="member-reg-form.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12 reg-form" style="padding: 10px 0 50px 0;">
+            <div class="signup form-peice">
+
+                <!-- Registration Form  -->
+                <form class="signup-form" action="#" method="post">
+                    <fieldset class="field-container">
+                        <legend>
+                            <h3 class="form-section"> Sponsor Info </h3>
+                        </legend>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="spr-name" style="padding-left: 13px;">
+                                    <b>Sponsor Name:</b> dentest
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field-container">
+                        <legend>
+                            <h3 class="form-section"> Downline Info </h3>
+                        </legend>
+                        <div class="row side-padding">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="fullname">Full Name (As Per IC/Passport No.)</label>
+                                    <input type="text" name="fullname" id="fullname" class="fullname">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username" id="username" class="username">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row side-padding">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="idnum">Identity No (IC/Passport No.)</label>
+                                    <input type="text" name="idnum" id="idnum" class="idnum">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select id="country" name="country" class="country">
+                                        <option value=""></option>
+                                        <option value="option1">option 1</option>
+                                        <option value="option2">option 2</option>
+                                        <option value="option3">option 3</option>
+                                        <option value="option4">option 4</option>
+                                        <option value="option5">option 5</option>
+                                    </select>
+                                    <span class="error"></span>
+                                    <i class="glyphicon glyphicon-chevron-down" id="select-arrow"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row side-padding">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email Adderss</label>
+                                    <input type="email" name="emailAdress" id="email" class="email">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phone">Mobile No</label>
+                                    <input type="text" name="phone" id="phone" class="phone">
+                                    <span class="error"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row side-padding">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" class="pass">
+                                    <span class="error"></span>
+                                    <span id="show_hide_password">
+                                        <i class="glyphicon glyphicon-eye-close" aria-hidden="true" type="button" id="eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="passwordCon">Confirm Password</label>
+                                    <input type="password" name="passwordCon" id="passwordConf" class="passConfirm">
+                                    <span class="error"></span>
+                                    <span id="show_hide_password2">
+                                        <i class="glyphicon glyphicon-eye-close" aria-hidden="true" type="button" id="eye2"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Package Info -->
+                    <div class="row">
+                        <div class="col-md-12" style="padding-left:0px; padding-right:0px;">
+                            <div class="col-md-6">
+                                <fieldset class="field-container">
+                                    <legend>
+                                        <h3 class="form-section"> Package Info </h3>
+                                    </legend>
+                                    <div class="row side-padding">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="coinQuality">Coin Quantity</label>
+                                                <input type="number" value="10" name="coinQuality" id="coinQuality"
+                                                    class="coinQuality">
+                                                <span class="error"></span>
+                                                <span style="position: absolute;bottom: -18px;left: 0; font-family: 'Montserrat', sans-serif; font-size: 11px;">Minimum
+                                                    10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row side-padding">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="totalAmount">Total Amount</label>
+                                                <input type="text" value="800" name="totalAmount" id="totalAmount"
+                                                    class="totalAmount">
+                                                <span class="error"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row side-padding">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="secdpass">Secondary Password</label>
+                                                <input type="password" name="secdpass" id="secdpass" class="secdpass">
+                                                <span class="error"></span>
+                                                <span id="show_hide_password3">
+                                                    <i class="glyphicon glyphicon-eye-close" aria-hidden="true" type="button"
+                                                        id="eye3"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <!-- Payment Info -->
+                            <div class="col-md-6">
+                                <fieldset class="field-container">
+                                    <legend>
+                                        <h3 class="form-section"> Payment Info </h3>
+                                    </legend>
+
+                                    <div class="row" style="padding: 0 13px 0 13px;">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="country">Payment Type</label>
+                                                <select id="payment-type" name="payment-type" class="payment-type">
+                                                    <option value=""></option>
+                                                    <option value="option1">Register Wallet</option>
+                                                    <option value="option2">Register Wallet + Bonus Wallet</option>
+                                                </select>
+                                                <span class="error"></span>
+                                                <i class="glyphicon glyphicon-chevron-down" id="select-arrow"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" style="padding: 15px 28px 0 28px;">
+                                        <table class="table table-hover table-bordered" style="color: black ">
+                                            <thead>
+                                                <tr style="background:#e2e1e1;">
+                                                    <th class="invoice-title bold">Wallet Type</th>
+                                                    <th class="invoice-title bold text-center" width="110px">Balance</th>
+                                                    <th class="invoice-title bold text-center" width="110px">Pay Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="payment_tbl">
+                                                <tr>
+                                                    <td style="vertical-align: middle;">Register Wallet</td>
+                                                    <td style="vertical-align: middle; text-align: right;">99200.00</td>
+                                                    <td style="vertical-align: middle;">
+                                                        <div class="form-group has-success" style="margin-bottom: 0px;"
+                                                            id="pay_group_0">
+                                                            <input class="text-right form-control paid" type="number"
+                                                                id="pay_amount_0" name="payment" value="800.00"
+                                                                aria-invalid="false" style="border: 1px solid rgb(39, 164, 176);">
+                                                            <span id="pay_amount_0-error" class="help-block help-block-error valid"></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot id="payment_tbl_footer">
+                                                <tr>
+                                                    <td class="bold" colspan="2" style="vertical-align: middle;">Total
+                                                        Pay Amount</td>
+                                                    <td style="vertical-align: middle; text-align: right;">
+                                                        <span class="bold font-red" id="total_pay_amount">-1.00</span>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="CTA" style="text-align: center;">
+                        <input type="submit" value="Signup Now" id="submit">
+                    </div>
+                </form>
+                <!-- end of Registration Form  -->
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="member-reg-form.js"></script>
+</body>
+
+</html>
