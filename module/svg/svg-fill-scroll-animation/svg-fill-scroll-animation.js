@@ -30,7 +30,6 @@ $(document).ready(function () {
 
 });
 
-
 //Reset if needed for manual animations..
 function hideSVGPaths(parentElement) {
 
