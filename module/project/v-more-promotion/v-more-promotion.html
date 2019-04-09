@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="V-More" name="description" />
+    <meta content="" name="author" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #F5F5F5;
+        }
+
+        .p-5 {
+            padding: 5px 0;
+        }
+
+        .p-10 {
+            padding: 10px 0;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        a {
+            color: #000;
+        }
+
+        a:hover,
+        a:active,
+        a:focus,
+        input:hover,
+        input:active,
+        input:focus,
+        button:hover,
+        button:active,
+        button:focus {
+            outline: 0;
+            border: none;
+            -moz-outline-style: none;
+            text-decoration: none;
+        }
+
+        .btn-orange {
+            padding: 10px 20px !important;
+            font-size: 13px !important;
+            background-color: #e8a531;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn-confirm {
+            width: 150px;
+        }
+
+        .btn-checkout {
+            width: 150px;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            opacity: 0.8;
+            color: #fff;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .vmore-orange {
+            color: #e8a531;
+        }
+
+        .header-title {
+            text-transform: capitalize;
+            font-family: Helvetica;
+            font-weight: 500;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .v-more-promo-page {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Header Style */
+        .v-more-header {
+            background-color: #fff;
+            padding: 20px;
+            border-bottom: 1px solid #D6D6D6;
+        }
+
+        /* Promotion Products  & Total Payment Section Style */
+        .promo-payment {
+            padding: 20px 0;
+        }
+
+        .promo-prod-card {
+            display: flex;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.42857143;
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+            background-color: #fff;
+            border-radius: .25rem;
+            border: 1px solid #dee2e6;
+        }
+
+        .promo-img-content {
+            width: 50%;
+        }
+
+        .promo-img {
+            max-width: 100%;
+            min-height: 100%;
+            border-radius: 4px;
+            /* width: 100%;
+            height: auto;
+            align-items: center;
+            vertical-align: middle; */
+        }
+
+        .promo-details-content {
+            width: 50%;
+            padding-left: 10px;
+            font-size: 10px;
+        }
+
+        .promo-details-content .promo-title {
+            padding-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .promo-details-content .desc {
+            cursor: pointer;
+            width: 15em;
+            height: 1.5em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .promo-details-content .promo-desc:hover {
+            overflow: visible;
+        }
+
+        .promo-details-content .promo-qty .form-control {
+            display: inline;
+            width: 60%;
+        }
+
+        /* PROMOTION Only 1 PRODUCTS Content Style */
+        .promo-img-content {
+            width: 40%;
+        }
+
+        .promo-details-1-content {
+            width: 60%;
+            padding-left: 10px;
+            font-size: 10px;
+        }
+
+        .promo-details-1-content .promo-title {
+            padding-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .promo-details-1-content .promo-qty .form-control {
+            display: inline;
+            width: 60%;
+        }
+
+        /* Total Payment Content Style */
+        .total-pymt-content {
+            margin-bottom: 1.5rem;
+            line-height: 1.42857143;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+            background-color: #fff;
+            border-radius: .25rem;
+            border: 1px solid #dee2e6;
+        }
+
+        .total-pymt-list>li {
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .rowlist {
+            position: relative;
+            overflow: auto;
+            width: 100%;
+        }
+
+        .col,
+        .remove {
+            float: left;
+        }
+
+        .col.left {
+            display: flex;
+        }
+
+        .col.right {
+            position: absolute;
+            right: 10px;
+            /* top: calc(50% - 30px); */
+        }
+
+        .total-pymt-list .img {
+            width: 100px;
+        }
+
+        .pymt-img {
+            max-width: 100%;
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+
+        .details {
+            padding: 0 1rem;
+            line-height: 2.2rem;
+        }
+
+        .details .name {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .details .qty {
+            color: #7d7d7d;
+            font-size: 1rem;
+        }
+
+        .details .price {
+            font-size: 1.3rem;
+        }
+
+        .fa-times-thin:before {
+            content: '\00d7';
+        }
+
+        .remove i:hover {
+            color: #f58551;
+        }
+
+        .summary {
+            padding: 1rem;
+        }
+
+        .summary-content {
+            padding: 10px 0 20px 0;
+            font-weight: bold;
+        }
+
+        .showPersonalInfo {
+            margin: 10px 0 60px 0;
+        }
+
+
+        /* Personal Information Section Style */
+        .psnl-info-form {
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.42857143;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+            background-color: #fff;
+            border-radius: .25rem;
+            border: 1px solid #dee2e6;
+        }
+
+        .title {
+            color: #333333;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+
+        .cont {
+            font-size: 15px;
+            font-weight: 400;
+            color: #9da0a7;
+        }
+
+        .radio,
+        .radio__label,
+        .radio__label:after,
+        .radio__label:before {
+            box-sizing: border-box;
+        }
+
+        .radio__container .radio {
+            display: inline;
+            opacity: 0;
+            width: 0;
+            margin: 0;
+            overflow: hidden;
+            -webkit-appearance: none;
+        }
+
+        .radio__container .radio__label {
+            display: inline-block;
+            height: 50px;
+            position: relative;
+            padding-left: 40px;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.54);
+            font: 300 14px/20px Helvetica, Arial, sans-serif;
+            transition: color 200ms ease;
+        }
+
+        .radio__container .radio__label:before,
+        .radio__container .radio__label:after {
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+            transition: border-color 200ms ease, -webkit-transform 200ms ease;
+            transition: transform 200ms ease, border-color 200ms ease;
+            transition: transform 200ms ease, border-color 200ms ease, -webkit-transform 200ms ease;
+        }
+
+        .radio__container .radio__label:before {
+            left: 0;
+            top: 15px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #dbdbdb;
+        }
+
+        .radio__container .radio__label:after {
+            top: 20px;
+            left: 5px;
+            width: 10px;
+            height: 10px;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            background-color: #3c91e6;
+        }
+
+        .radio__container .radio__label:hover {
+            color: #3c91e6;
+        }
+
+        .radio__container .radio__label:hover:before {
+            border-color: #fb872b;
+        }
+
+        .radio__container .radio:checked+.radio__label {
+            color: rgba(0, 0, 0, 0.87);
+        }
+
+        .radio__container .radio:checked+.radio__label:before {
+            border-color: #3c91e6;
+        }
+
+        .radio__container .radio:checked+.radio__label:after {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        .paymentImg {
+            padding-right: 10px;
+        }
+
+        /* Overlay Content Style */
+        .popup {
+            position: fixed;
+            padding: 15px 5px;
+            /* max-width: 500px; */
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, .9);
+            visibility: hidden;
+            opacity: 0;
+            /* "delay" the visibility transition */
+            -webkit-transition: opacity .5s, visibility 0s linear .5s;
+            transition: opacity .5s, visibility 0s linear .5s;
+            z-index: 1;
+            background-color: #fff;
+        }
+
+        .popup:target {
+            visibility: visible;
+            opacity: 1;
+            /* cancel visibility transition delay */
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s ease-in-out;
+        }
+
+        .popup-close {
+            position: absolute;
+            padding: 10px;
+            max-width: 500px;
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, .9);
+        }
+
+        .popup .close {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            padding: 5px;
+            color: #000;
+            transition: color .3s;
+            font-size: 2em;
+            line-height: .6em;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        .popup .close:hover {
+            color: #f58551;
+        }
+
+        .close-popup {
+            background: rgba(0, 0, 0, .7);
+            cursor: default;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            visibility: hidden;
+            /* "delay" the visibility transition */
+            -webkit-transition: opacity .5s, visibility 0s linear .5s;
+            transition: opacity .5s, visibility 0s linear .5s;
+        }
+
+        .popup:target+.close-popup {
+            opacity: 1;
+            visibility: visible;
+            /* cancel visibility transition delay */
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+
+        .overlay-promo-title {
+            padding-bottom: 10px;
+            font-size: 2.1rem;
+        }
+
+        .overlay-promo-details-content {
+            font-size: 1.5rem;
+        }
+
+
+        .overlay-promo-qty .form-control {
+            display: inline;
+            width: 60%;
+        }
+
+        @media screen and (max-width: 800px) {
+            .header-title {
+                text-align: center;
+            }
+
+            .prod-img-content {
+                padding: 20px 0;
+            }
+
+            .psnl-info-form .text-left {
+                text-align: right;
+            }
+
+            .psnl-info-form .text-right {
+                text-align: left;
+            }
+
+            /* PROMOTION Only 1 PRODUCTS Content Style */
+            .promo-details-1-content .promo-title {
+                padding-bottom: 10px;
+                font-size: 1.2rem;
+            }
+
+            /* Popout Content Style */
+            .popup {
+                width: 85%;
+            }
+
+            .overlay-promo-title {
+                font-size: 1.6rem;
+            }
+
+            .overlay-promo-details-content {
+                font-size: 1.1rem;
+            }
+
+            .overlay-promo-desc {
+                height: unset;
+            }
+
+            .overlay-promo-qty .form-control {
+                width: unset;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="v-more-header text-center">
+
+        <img src="http://sgvmoreasia.is.my/storage/VM/ecommerce/image/VMORE_logo.png" alt="logo" width="250"
+            id="header-image">
+    </div>
+
+    <div class="v-more-promo-page">
+        <!-- Promotion Products  & Total Payment Section -->
+        <section class="promo-payment">
+            <div class="container">
+                <div class="row">
+                    <!-- Promotion Product Content -->
+                    <div class="col-md-8 col-xs-12">
+                        <h4 class="vmore-orange header-title">PROMOTION PRODUCTS</h4>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <div class="promo-prod-card">
+                                    <div class="promo-img-content">
+                                        <img src="http://sgvmoreasia.is.my/storage/VM/products/original/543125768174.jpg"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="promo-details-content">
+                                        <div class="promo-title">
+                                            <strong>Hoyu Professional - MEDILOOK (500ml) </strong>
+                                        </div>
+                                        <div class="promo-desc p-5">
+                                            <strong>Description :</strong><br>
+                                            <div class="desc">
+                                                <a href="#popup1">
+                                                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="promo-qty p-5">
+                                            <strong>Quantity : </strong>
+                                            <span>
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </span>
+                                        </div>
+
+                                        <div class="promo-price p-5">
+                                            <strong>Price : </strong>
+                                            USD 122
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button class="btn btn-orange" id="addcart_btn"> ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="promo-prod-card">
+                                    <div class="promo-img-content">
+                                        <img src="http://sgvmoreasia.is.my/storage/VM/products/original/543125768174.jpg"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="promo-details-content">
+                                        <div class="promo-title">
+                                            <strong>Hoyu Professional - MEDILOOK (500ml) </strong>
+                                        </div>
+                                        <div class="promo-desc p-5">
+                                            <strong>Description :</strong><br>
+                                            <div class="desc">
+                                                <a href="#popup1">
+                                                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="promo-qty p-5">
+                                            <strong>Quantity : </strong>
+                                            <span>
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </span>
+                                        </div>
+
+                                        <div class="promo-price p-5">
+                                            <strong>Price : </strong>
+                                            USD 122
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button class="btn btn-orange" id="addcart_btn"> ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="promo-prod-card">
+                                    <div class="promo-img-content">
+                                        <img src="http://sgvmoreasia.is.my/storage/VM/products/original/543125768174.jpg"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="promo-details-content">
+                                        <div class="promo-title">
+                                            <strong>Hoyu Professional - MEDILOOK (500ml) </strong>
+                                        </div>
+                                        <div class="promo-desc p-5">
+                                            <strong>Description :</strong><br>
+                                            <div class="desc">
+                                                <a href="#popup1">
+                                                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="promo-qty p-5">
+                                            <strong>Quantity : </strong>
+                                            <span>
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </span>
+                                        </div>
+
+                                        <div class="promo-price p-5">
+                                            <strong>Price : </strong>
+                                            USD 122
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button class="btn btn-orange" id="addcart_btn"> ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="promo-prod-card">
+                                    <div class="promo-img-content">
+                                        <img src="http://sgvmoreasia.is.my/storage/VM/products/original/543125768174.jpg"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="promo-details-content">
+                                        <div class="promo-title">
+                                            <strong>Hoyu Professional - MEDILOOK (500ml) </strong>
+                                        </div>
+                                        <div class="promo-desc p-5">
+                                            <strong>Description :</strong><br>
+                                            <div class="desc">
+                                                <a href="#popup1">
+                                                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="promo-qty p-5">
+                                            <strong>Quantity : </strong>
+                                            <span>
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </span>
+                                        </div>
+
+                                        <div class="promo-price p-5">
+                                            <strong>Price : </strong>
+                                            USD 122
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button class="btn btn-orange" id="addcart_btn"> ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-xs-12">
+                                <div class="promo-prod-card">
+                                    <div class="promo-img-content">
+                                        <img src="http://sgvmoreasia.is.my/storage/VM/products/original/543125768174.jpg"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="promo-details-1-content">
+                                        <div class="promo-title">
+                                            <strong>Hoyu Professional - MEDILOOK (500ml) </strong>
+                                        </div>
+                                        <div class="promo-desc p-5">
+                                            <strong>Description :</strong><br>
+                                            <div class="desc">
+                                                <a href="#popup1">
+                                                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="promo-qty p-5">
+                                            <strong>Quantity : </strong>
+                                            <span>
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </span>
+                                        </div>
+
+                                        <div class="promo-price p-5">
+                                            <strong>Price : </strong>
+                                            USD 122
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button class="btn btn-orange" id="addcart_btn"> ADD TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Total Payment Content -->
+                    <div class="col-md-4 col-xs-12">
+                        <h4 class="vmore-orange header-title">TOTAL PAYMENT</h4>
+                        <div class="total-pymt-content">
+                            <ul class="total-pymt-list">
+                                <li class="rowlist">
+                                    <div class="col left">
+                                        <div class="img">
+                                            <img src="http://sgvmoreasia.is.my/storage/VM/products/original/543125768174.jpg"
+                                                class="pymt-img">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Hoyu Professional - MEDILOOK (500ml)</div>
+                                            <div class="qty">QTY : 1</div>
+                                            <div class="price">USD 122</div>
+                                        </div>
+                                    </div>
+                                    <div class="col right">
+                                        <div class="remove">
+                                            <i class="fa fa-times-thin fa-2x"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rowlist">
+                                    <div class="col left">
+                                        <div class="img">
+                                            <img src="http://sgvmoreasia.is.my/storage/VM/products/original/543125768174.jpg"
+                                                class="pymt-img">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Hoyu Professional - MEDILOOK (500ml)</div>
+                                            <div class="qty">QTY : 1</div>
+                                            <div class="price">USD 122.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="col right">
+                                        <div class="remove">
+                                            <i class="fa fa-times-thin fa-2x"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="summary">
+                                <div class="summary-content">
+                                    <div class="total-text pull-left bold">Total Payment</div>
+                                    <div class="total-price pull-right bold">USD 244.00</div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-orange btn-confirm" id="confirm-btn"> CONFIRM </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Information Section -->
+        <section class="showPersonalInfo" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <h4 class="vmore-orange header-title personal-info-header">Personal Information</h4>
+                        <div class="psnl-info-form">
+                            <div class="row p-10">
+                                <div class="col-md-4 col-xs-12 text-right">
+                                    <span class="title bold">Name : </span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 text-left">
+                                    <span class="cont">
+                                        <input type="text" name="name" class="form-control">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row p-10">
+                                <div class="col-md-4 col-xs-12 text-right">
+                                    <span class="title bold">Country : </span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 text-left">
+                                    <span class="cont">
+                                        <select name="country" class="form-control">
+                                            <option>Singapore</option>
+                                            <option>Japan</option>
+                                            <option>Malaysia</option>
+                                            <option>Thailand</option>
+                                            <option>China</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row p-10">
+                                <div class="col-md-4 col-xs-12 text-right">
+                                    <span class="title bold">Email : </span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 text-left">
+                                    <span class="cont">
+                                        <input type="emial" name="email" class="form-control"
+                                            placeholder="john@sample.com">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row p-10">
+                                <div class="col-md-4 col-xs-12 text-right">
+                                    <span class="title bold">Mobile Contact : </span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 text-left">
+                                    <span class="cont">
+                                        <input type="text" name="phone" class="form-control">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row p-10">
+                                <div class="col-md-4 col-xs-12 text-right">
+                                    <span class="title bold">Password : </span>
+                                </div>
+                                <div class="col-md-6 col-xs-12 text-left">
+                                    <span class="cont">
+                                        <input type="text" name="password" class="form-control">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row p-10">
+                                <div class="col-md-4 col-xs-12 text-right">
+                                    <span class="title bold">Choose Payment Method : </span>
+                                </div>
+                                <div class="col-md-6 col-xs-12" style="text-align:left;">
+                                    <span class="cont radio__container">
+                                        <div>
+                                            <input class="radio" id="debit-credit" name="radio" type="radio"
+                                                value="debit-credit" checked>
+                                            <label class="radio__label" for="debit-credit">
+                                                <img src="{{asset('/storage/VVCSG/ecommerce/image/visamaster.png')}}"
+                                                    alt="credit_card" width="151px" height="42px" class="paymentImg">
+                                                <strong>Debit Card and Credit Card</strong>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input class="radio" id="union-pay" name="radio" type="radio"
+                                                value="union-pay">
+                                            <label class="radio__label" for="union-pay">
+                                                <img src="{{asset('/storage/VVCSG/ecommerce/image/unionpay-logo.png')}}"
+                                                    alt="unionpay" width="80px" height="50px" class="paymentImg">
+                                                <strong>Union Pay</strong>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input class="radio" id="paypal" name="radio" type="radio" value="paypal">
+                                            <label class="radio__label" for="paypal">
+                                                <img src="{{asset('assets/layouts/ecommerce/images/payment_gateway/paypal_logo.png')}}"
+                                                    alt="paypal" width="100px" height="45px" class="paymentImg">
+                                                <strong>PayPal</strong>
+                                            </label>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="text-center p-10">
+                                <button class="btn btn-orange btn-checkout" id="checkout_btn"> CHECKOUT </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="popupContent">
+        <div id="popup1" class="popup">
+            <a href="#" class="close">&times;</a>
+            <div class="container ovelay-content">
+                <div class="row overlay-promo-prod-card">
+                    <div class="col-md-offset-1 col-xs-offset-0"></div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="prod-img-content">
+                            <img src="http://sgvmoreasia.is.my/storage/VM/products/original/543125768174.jpg" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="overlay-promo-details-content col-md-6 col-xs-12">
+                        <div class="overlay-promo-title">
+                            <strong>Hoyu Professional - MEDILOOK (500ml) </strong>
+                        </div>
+                        <div class="overlay-promo-desc p-5">
+                            <strong>Description :</strong><br>
+                            <div class="overlay-desc">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text.
+                            </div>
+                        </div>
+                        <div class="overlay-promo-qty p-5">
+                            <strong>Quantity : </strong>
+                            <span>
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </span>
+                        </div>
+
+                        <div class="overlay-promo-price p-5">
+                            <strong>Quantity : </strong>
+                            USD 122
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-orange" id="addcart_btn"> ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="col-md-offset-1 col-xs-offset-0"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="close-popup"></a>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#confirm-btn").on("click", function () {
+                TweenMax.from(".showPersonalInfo", 1.6, {
+                    delay: 0.4,
+                    opacity: 0,
+                    y: 20,
+                    ease: Expo.easeInOut
+                });
+
+                TweenMax.from(".personal-info-header", 1.6, {
+                    delay: 0.4,
+                    opacity: 0,
+                    x: 40,
+                    ease: Expo.easeInOut
+                });
+
+                $(".showPersonalInfo").show();
+            })
+        });
+
+        TweenMax.from("#header-image", 1.6, {
+            delay: 0.2,
+            opacity: 0,
+            y: -20,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".header-title", 1.6, {
+            delay: 0.4,
+            opacity: 0,
+            x: 30,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".total-pymt-content", 1.6, {
+            delay: 0.8,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.staggerFrom(".promo-prod-card", 2, {
+            delay: 0.4,
+            opacity: 0,
+            y: 30,
+            ease: Expo.easeInOut
+        }, 0.2);
+    </script>
+
+</body>
+
+</html>
