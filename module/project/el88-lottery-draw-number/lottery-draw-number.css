@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Do Hyeon', sans-serif;
+    background: #7049f7;
+}
+
+section {
+    margin: 100px 100px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    margin: 20px auto;
+}
+
+#js-lotto-drawbox table td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #333;
+    /* padding: 20px; */
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+#js-lotto-drawbox table td.active {
+    border: 3px solid gold;
+    background-color: rgb(242, 245, 90);
+}
+
+#js-lotto-drawbox table td.bold {
+    background-color: rgb(138, 138, 138);
+}
+
+.square.is-active {
+    border: 20px solid gold;
+}
+
+.square__start-btn {
+    background: gold;
+    color: #e97573;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.square__start-btn:hover {
+    background: #ffeb80;
+}
