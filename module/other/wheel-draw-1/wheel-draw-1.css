@@ -1,0 +1,241 @@
+body {
+    background-color: #737373;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.appBody {
+    width: 250px;
+    height: 390px;
+    background-color: red;
+    border-radius: 20px;
+    background: #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: relative;
+}
+
+.appBody:before {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    width: 204px;
+    height: 320px;
+    left: 23px;
+    top: 37px;
+    background: #3A3A3A;
+    border-radius: 20px;
+}
+
+.appBody h1 {
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    font-size: 10px;
+    color: #C4C4C4;
+    transform: rotate(-90deg);
+}
+
+.appBody .roulette {
+    position: relative;
+    top: 80px;
+    left: 11px;
+    width: 230px;
+    height: 230px;
+    border-radius: 227px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.appBody .roulette .rouletteBase {
+    width: 215px;
+    height: 215px;
+    position: relative;
+    top: 7.5px;
+    left: 7.5px;
+    border-radius: 215px;
+    background-color: #C4C4C4;
+    transition: all 5s ease-in-out;
+}
+
+.appBody .roulette .rouletteBase .pie {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 215px;
+    height: 215px;
+    border-radius: 215px;
+    clip: rect(0px, 215px, 215px, 107.5px);
+}
+
+.appBody .roulette .rouletteBase .pie .slice {
+    background-color: #C4C4C4;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 215px;
+    height: 215px;
+    border-radius: 215px;
+    clip: rect(0px, 107.5px, 215px, 0px);
+    transform: rotate(36deg);
+}
+
+.appBody .roulette .rouletteBase .pie .slice p {
+    font-size: 30px;
+    color: #737373;
+    position: absolute;
+    top: -10px;
+    /* left: 70px; */
+    left: 76px;
+    font-weight: bold;
+    transform: rotate(-20deg);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.appBody .roulette .rouletteBase .pie .slice .lightGreyIcon {
+    color: #C4C4C4;
+}
+
+.appBody .roulette .rouletteBase .pie .darkGrey {
+    background-color: #737373;
+}
+
+.appBody .roulette .rouletteBase .rotate2 {
+    transform: rotate(36deg);
+}
+
+.appBody .roulette .rouletteBase .rotate3 {
+    transform: rotate(72deg);
+}
+
+.appBody .roulette .rouletteBase .rotate4 {
+    transform: rotate(108deg);
+}
+
+.appBody .roulette .rouletteBase .rotate5 {
+    transform: rotate(144deg);
+}
+
+.appBody .roulette .rouletteBase .rotate6 {
+    transform: rotate(180deg);
+}
+
+.appBody .roulette .rouletteBase .rotate7 {
+    transform: rotate(216deg);
+}
+
+.appBody .roulette .rouletteBase .rotate8 {
+    transform: rotate(252deg);
+}
+
+.appBody .roulette .rouletteBase .rotate9 {
+    transform: rotate(288deg);
+}
+
+.appBody .roulette .rouletteBase .rotate10 {
+    transform: rotate(324deg);
+}
+
+/* .appBody .roulette .rouletteBase .rotate2 {
+  transform: rotate(45deg);
+}
+.appBody .roulette .rouletteBase .rotate3 {
+  transform: rotate(90deg);
+}
+.appBody .roulette .rouletteBase .rotate4 {
+  transform: rotate(135deg);
+}
+.appBody .roulette .rouletteBase .rotate5 {
+  transform: rotate(180deg);
+}
+.appBody .roulette .rouletteBase .rotate6 {
+  transform: rotate(225deg);
+}
+.appBody .roulette .rouletteBase .rotate7 {
+  transform: rotate(270deg);
+}
+.appBody .roulette .rouletteBase .rotate8 {
+  transform: rotate(315deg);
+} */
+
+.appBody .roulette .rouletteTop {
+    width: 39px;
+    height: 39px;
+    border-radius: 39px;
+    background: #3A3A3A;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 95px;
+    left: 92px;
+    cursor: pointer;
+    animation: all 1s easy-in-out;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.appBody .roulette .rouletteTop .top2 {
+    width: 27px;
+    height: 27px;
+    border-radius: 27px;
+    margin-top: 5.8px;
+    margin-left: 5.8px;
+    background: #C4C4C4;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.appBody .roulette .rouletteTop .top2 i {
+    font-size: 20px;
+    color: #A6A5A5;
+    margin-top: 3px;
+    margin-left: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.appBody .roulette .rouletteTop:active {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    width: 37px;
+    height: 37px;
+    top: 99px;
+    left: 95px;
+    user-select: none;
+}
+
+.appBody .roulette .rouletteTop:active .top2 {
+    background: #b3b3b3;
+    width: 25px;
+    height: 25px;
+}
+
+.appBody .roulette .rouletteTop:active .top2 i {
+    color: #8d8b8b;
+    font-size: 18px;
+}
+
+.appBody .palheta {
+    height: 0px;
+    width: 0px;
+    border-left: 15px transparent solid;
+    border-right: 15px transparent solid;
+    border-top: 50px #C4C4C4 solid;
+    position: absolute;
+    z-index: 99;
+    top: 50px;
+    left: 110px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.5));
+    -webkit-filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.5));
+}
