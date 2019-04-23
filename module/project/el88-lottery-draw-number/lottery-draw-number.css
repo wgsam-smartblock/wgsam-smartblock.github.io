@@ -1,6 +1,6 @@
-*,
-*::before,
-*::after {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -9,36 +9,29 @@ body {
     background: #7049f7;
 }
 
-section {
-    margin: 100px 100px;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 620px;
-    margin: 20px auto;
+#js-lotto-drawbox table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    background: url(img/spin.png);
+    background-size: 100% 100%;
+    padding: 20px;
 }
 
 #js-lotto-drawbox table td {
-    width: 60px;
-    height: 60px;
     text-align: center;
     vertical-align: middle;
     font-size: 20px;
     color: #333;
-    /* padding: 20px; */
-    background-color: #fff;
-    border: 1px solid #000;
+    background: rgb(255, 236, 0, 0.5);
+    padding: 8px 15px;
 }
 
 #js-lotto-drawbox table td.active {
-    border: 3px solid gold;
-    background-color: rgb(242, 245, 90);
+    background-color: #FFEC00;
 }
 
 #js-lotto-drawbox table td.bold {
-    background-color: rgb(138, 138, 138);
+    text-decoration: line-through;
 }
 
 .square.is-active {
@@ -46,6 +39,7 @@ section {
 }
 
 .square__start-btn {
+    margin: 20px auto;
     background: gold;
     color: #e97573;
     font-size: 2em;

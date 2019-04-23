@@ -10,355 +10,355 @@ let luckDrawObj = {
     "luckyList": [{
         "id": "0",
         "number": "1234",
-        "selected": false
+        "selected": 0
     }, {
         "id": "1",
         "number": "2345",
-        "selected": false
+        "selected": 1
     }, {
         "id": "2",
         "number": "3456",
-        "selected": false
+        "selected": 0
     }, {
         "id": "3",
         "number": "4567",
-        "selected": true
+        "selected": 0
     }, {
         "id": "4",
         "number": "6789",
-        "selected": false
+        "selected": 0
     }, {
         "id": "5",
         "number": "9876",
-        "selected": false
+        "selected": 0
     }, {
         "id": "6",
         "number": "8765",
-        "selected": false
+        "selected": 0
     }, {
         "id": "7",
         "number": "7654",
-        "selected": false
+        "selected": 0
     }, {
         "id": "8",
         "number": "6543",
-        "selected": true
+        "selected": 1
     }, {
         "id": "9",
         "number": "1234",
-        "selected": false
+        "selected": 1
     }, {
         "id": "10",
         "number": "2345",
-        "selected": false
+        "selected": 0
     }, {
         "id": "11",
         "number": "3456",
-        "selected": false
+        "selected": 0
     }, {
         "id": "12",
         "number": "4567",
-        "selected": true
+        "selected": 0
     }, {
         "id": "13",
         "number": "6789",
-        "selected": false
+        "selected": 0
     }, {
         "id": "14",
         "number": "9876",
-        "selected": false
+        "selected": 0
     }, {
         "id": "15",
         "number": "8765",
-        "selected": false
+        "selected": 0
     }, {
         "id": "16",
         "number": "7654",
-        "selected": false
+        "selected": 1
     }, {
         "id": "17",
         "number": "6543",
-        "selected": true
+        "selected": 0
     }, {
         "id": "18",
         "number": "1234",
-        "selected": false
+        "selected": 0
     }, {
         "id": "19",
         "number": "2345",
-        "selected": false
+        "selected": 0
     }, {
         "id": "20",
         "number": "3456",
-        "selected": false
+        "selected": 0
     }, {
         "id": "21",
         "number": "4567",
-        "selected": true
+        "selected": 0
     }, {
         "id": "22",
         "number": "6789",
-        "selected": false
+        "selected": 0
     }, {
         "id": "23",
         "number": "9876",
-        "selected": false
+        "selected": 1
     }, {
         "id": "24",
         "number": "8765",
-        "selected": false
+        "selected": 0
     }, {
         "id": "25",
         "number": "7654",
-        "selected": false
+        "selected": 1
     }, {
         "id": "26",
         "number": "6543",
-        "selected": true
+        "selected": 0
     }, {
         "id": "27",
         "number": "1234",
-        "selected": false
+        "selected": 0
     }, {
         "id": "28",
         "number": "2345",
-        "selected": false
+        "selected": 1
     }, {
         "id": "29",
         "number": "3456",
-        "selected": false
+        "selected": 0
     }, {
         "id": "30",
         "number": "4567",
-        "selected": true
+        "selected": 1
     }, {
         "id": "31",
         "number": "6789",
-        "selected": false
+        "selected": 1
     }, {
         "id": "32",
         "number": "9876",
-        "selected": false
+        "selected": 1
     }, {
         "id": "33",
         "number": "8765",
-        "selected": false
+        "selected": 0
     }, {
         "id": "34",
         "number": "7654",
-        "selected": false
+        "selected": 0
     }, {
         "id": "35",
         "number": "6543",
-        "selected": true
+        "selected": 0
     }, {
         "id": "36",
         "number": "1234",
-        "selected": false
+        "selected": 0
     }, {
         "id": "37",
         "number": "2345",
-        "selected": false
+        "selected": 0
     }, {
         "id": "38",
         "number": "3456",
-        "selected": false
+        "selected": 0
     }, {
         "id": "39",
         "number": "4567",
-        "selected": true
+        "selected": 0
     }, {
         "id": "40",
         "number": "6789",
-        "selected": false
+        "selected": 0
     }, {
         "id": "41",
         "number": "9876",
-        "selected": false
+        "selected": 0
     }, {
         "id": "42",
         "number": "8765",
-        "selected": false
+        "selected": 0
     }, {
         "id": "43",
         "number": "7654",
-        "selected": false
+        "selected": 0
     }, {
         "id": "44",
         "number": "6543",
-        "selected": true
+        "selected": 1
     }, {
         "id": "45",
         "number": "1234",
-        "selected": false
+        "selected": 0
     }, {
         "id": "46",
         "number": "2345",
-        "selected": false
+        "selected": 0
     }, {
         "id": "47",
         "number": "3456",
-        "selected": false
+        "selected": 0
     }, {
         "id": "48",
         "number": "4567",
-        "selected": true
+        "selected": 1
     }, {
         "id": "49",
         "number": "6789",
-        "selected": false
+        "selected": 0
     }, {
         "id": "50",
         "number": "9876",
-        "selected": false
+        "selected": 0
     }, {
         "id": "51",
         "number": "8765",
-        "selected": false
+        "selected": 0
     }, {
         "id": "52",
         "number": "7654",
-        "selected": false
+        "selected": 0
     }, {
         "id": "53",
         "number": "6543",
-        "selected": true
+        "selected": 1
     }, {
         "id": "54",
         "number": "1234",
-        "selected": false
+        "selected": 0
     }, {
         "id": "55",
         "number": "2345",
-        "selected": false
+        "selected": 0
     }, {
         "id": "56",
         "number": "3456",
-        "selected": false
+        "selected": 0
     }, {
         "id": "57",
         "number": "4567",
-        "selected": true
+        "selected": 1
     }, {
         "id": "58",
         "number": "6789",
-        "selected": false
+        "selected": 0
     }, {
         "id": "59",
         "number": "9876",
-        "selected": false
+        "selected": 0
     }, {
         "id": "60",
         "number": "8765",
-        "selected": false
+        "selected": 0
     }, {
         "id": "61",
         "number": "7654",
-        "selected": false
+        "selected": 0
     }, {
         "id": "62",
         "number": "6543",
-        "selected": true
+        "selected": 1
     }, {
         "id": "63",
         "number": "1234",
-        "selected": false
+        "selected": 0
     }, {
         "id": "64",
         "number": "2345",
-        "selected": false
+        "selected": 0
     }, {
         "id": "65",
         "number": "3456",
-        "selected": false
+        "selected": 0
     }, {
         "id": "66",
         "number": "4567",
-        "selected": true
+        "selected": 1
     }, {
         "id": "67",
         "number": "6789",
-        "selected": false
+        "selected": 0
     }, {
         "id": "68",
         "number": "9876",
-        "selected": false
+        "selected": 0
     }, {
         "id": "69",
         "number": "8765",
-        "selected": false
+        "selected": 0
     }, {
         "id": "70",
         "number": "7654",
-        "selected": false
+        "selected": 0
     }, {
         "id": "71",
         "number": "6543",
-        "selected": true
+        "selected": 1
     }, {
         "id": "72",
         "number": "1234",
-        "selected": false
+        "selected": 0
     }, {
         "id": "73",
         "number": "2345",
-        "selected": false
+        "selected": 0
     }, {
         "id": "74",
         "number": "3456",
-        "selected": false
+        "selected": 0
     }, {
         "id": "75",
         "number": "4567",
-        "selected": true
+        "selected": 1
     }, {
         "id": "76",
         "number": "6789",
-        "selected": false
+        "selected": 0
     }, {
         "id": "77",
         "number": "9876",
-        "selected": false
+        "selected": 0
     }, {
         "id": "78",
         "number": "8765",
-        "selected": false
+        "selected": 0
     }, {
         "id": "79",
         "number": "7654",
-        "selected": false
+        "selected": 0
     }, {
         "id": "80",
         "number": "6543",
-        "selected": true
+        "selected": 1
     }, {
         "id": "81",
         "number": "1234",
-        "selected": false
+        "selected": 0
     }, {
         "id": "82",
         "number": "2345",
-        "selected": false
+        "selected": 0
     }, {
         "id": "83",
         "number": "3456",
-        "selected": false
+        "selected": 0
     }, {
         "id": "84",
         "number": "4567",
-        "selected": true
+        "selected": 1
     }, {
         "id": "85",
         "number": "6789",
-        "selected": false
+        "selected": 0
     }, {
         "id": "86",
         "number": "9876",
-        "selected": false
+        "selected": 0
     }, {
         "id": "87",
         "number": "8765",
-        "selected": false
+        "selected": 0
     }]
 };
 
