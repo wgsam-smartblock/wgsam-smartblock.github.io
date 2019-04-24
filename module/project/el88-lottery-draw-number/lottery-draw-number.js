@@ -388,7 +388,8 @@ const prizes = {
 };
 
 $(document).ready(() => {
-    renderLuckyDrawBox();
+    renderLuckyDrawBox()
+    $(window).resize(renderLuckyDrawBox);
     $('#js-start').on('click', init);
 });
 
@@ -410,9 +411,14 @@ function generate_DrawBox(drawBoxData) {
         html += "<td class='square " + isBold + "' data-order=" + item.id + ">" +
             "<div class='square__content'>" + item.number + "</div></td>";
 
-        // breaking calculation
-        if (configuredIndex % 11 === 0 || configuredIndex === 0) {
-            html += "</tr><tr>";
+        if ($(window).width() <= 991) {
+            if (configuredIndex % 4 === 0 || configuredIndex === 0) {
+                html += "</tr><tr>";
+            }
+        } else {
+            if (configuredIndex % 11 === 0 || configuredIndex === 0) {
+                html += "</tr><tr>";
+            }
         }
     });
 
