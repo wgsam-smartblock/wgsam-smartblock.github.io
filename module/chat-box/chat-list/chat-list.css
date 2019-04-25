@@ -3,7 +3,6 @@ body {
 }
 
 /* ------ Side Menu Bar CSS------   */
-
 #cd-menu-trigger {
   top: 20px;
   left: 30px;
@@ -21,7 +20,6 @@ body {
 }
 
 /* ------ End of Side Menu Bar CSS------   */
-
 #cd-side-menu {
   height: 100%;
   width: 0;
@@ -38,7 +36,6 @@ body {
 }
 
 /* ------ Chat menu list "X" close button CSS------   */
-
 #cd-x-trigger {
   position: absolute;
   right: 20px;
@@ -57,7 +54,6 @@ body {
 }
 
 /* ------ End of Chat menu list "X" close button CSS------ */
-
 #chat-list-container {
   z-index: 2;
   position: absolute;
@@ -68,7 +64,6 @@ body {
 }
 
 /* ------ Seach field CSS ------*/
-
 #searchfield:focus {
   outline: 0;
 }
@@ -100,7 +95,6 @@ input::placeholder {
 /* ------ End of Seach field CSS ------ */
 
 /* ------ Friend Chat List CSS ------ */
-
 .chat-friend-container {
   height: 70px;
   position: relative;
@@ -131,7 +125,8 @@ input::placeholder {
   color: #92959E;
 }
 
-.online, .offline {
+.online,
+.offline {
   margin-right: 3px;
   font-size: 10px;
 }
@@ -147,7 +142,6 @@ input::placeholder {
 /* ------ End of Friend Chat List CSS ------ */
 
 /* ------ Chat Box Container Header CSS------ */
-
 .floatingImg {
   width: 40px;
   border-radius: 50%;
@@ -222,7 +216,8 @@ input::placeholder {
   opacity: 1;
 }
 
-.cx, .cy {
+.cx,
+.cy {
   background: #fff;
   position: absolute;
   width: 0px;
@@ -236,7 +231,8 @@ input::placeholder {
   transition: all 250ms ease-in-out;
 }
 
-.cx.s1, .cy.s1 {
+.cx.s1,
+.cy.s1 {
   right: 0;
   width: 20px;
   -webkit-transition: all 100ms ease-out;
@@ -303,7 +299,6 @@ input::placeholder {
 /* ------ End of Chat Box Container Header CSS------ */
 
 /* ------ Messages Chat Box CSS------ */
-
 .chatbox {
   display: flex;
   width: auto;
@@ -483,7 +478,6 @@ input::placeholder {
 /* ------ End of Messages Chat Box CSS------ */
 
 /* ------ Messages Send Box CSS ------ */
-
 .message-box {
   flex: 0 1 40px;
   width: 100%;
@@ -557,7 +551,6 @@ input::placeholder {
 /* ------ Messages Send Box CSS ------ */
 
 /*  ------ Custom Srollbar CSS ------ */
-
 .mCSB_scrollTools {
   margin: 1px -3px 1px 0;
   opacity: 0;
@@ -581,56 +574,67 @@ input::placeholder {
 /*--------------------
 Bounce Loading Animation 
 --------------------*/
-
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   4.7% {
     -webkit-transform: matrix3d(0.45, 0, 0, 0, 0, 0.45, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.45, 0, 0, 0, 0, 0.45, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   9.41% {
     -webkit-transform: matrix3d(0.883, 0, 0, 0, 0, 0.883, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.883, 0, 0, 0, 0, 0.883, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   14.11% {
     -webkit-transform: matrix3d(1.141, 0, 0, 0, 0, 1.141, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1.141, 0, 0, 0, 0, 1.141, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   18.72% {
     -webkit-transform: matrix3d(1.212, 0, 0, 0, 0, 1.212, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1.212, 0, 0, 0, 0, 1.212, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   24.32% {
     -webkit-transform: matrix3d(1.151, 0, 0, 0, 0, 1.151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1.151, 0, 0, 0, 0, 1.151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   29.93% {
     -webkit-transform: matrix3d(1.048, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1.048, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   35.54% {
     -webkit-transform: matrix3d(0.979, 0, 0, 0, 0, 0.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.979, 0, 0, 0, 0, 0.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   41.04% {
     -webkit-transform: matrix3d(0.961, 0, 0, 0, 0, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.961, 0, 0, 0, 0, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   52.15% {
     -webkit-transform: matrix3d(0.991, 0, 0, 0, 0, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.991, 0, 0, 0, 0, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   63.26% {
     -webkit-transform: matrix3d(1.007, 0, 0, 0, 0, 1.007, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1.007, 0, 0, 0, 0, 1.007, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   85.49% {
     -webkit-transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   100% {
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -642,50 +646,62 @@ Bounce Loading Animation
     -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   4.7% {
     -webkit-transform: matrix3d(0.45, 0, 0, 0, 0, 0.45, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.45, 0, 0, 0, 0, 0.45, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   9.41% {
     -webkit-transform: matrix3d(0.883, 0, 0, 0, 0, 0.883, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.883, 0, 0, 0, 0, 0.883, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   14.11% {
     -webkit-transform: matrix3d(1.141, 0, 0, 0, 0, 1.141, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1.141, 0, 0, 0, 0, 1.141, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   18.72% {
     -webkit-transform: matrix3d(1.212, 0, 0, 0, 0, 1.212, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1.212, 0, 0, 0, 0, 1.212, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   24.32% {
     -webkit-transform: matrix3d(1.151, 0, 0, 0, 0, 1.151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1.151, 0, 0, 0, 0, 1.151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   29.93% {
     -webkit-transform: matrix3d(1.048, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1.048, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   35.54% {
     -webkit-transform: matrix3d(0.979, 0, 0, 0, 0, 0.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.979, 0, 0, 0, 0, 0.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   41.04% {
     -webkit-transform: matrix3d(0.961, 0, 0, 0, 0, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.961, 0, 0, 0, 0, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   52.15% {
     -webkit-transform: matrix3d(0.991, 0, 0, 0, 0, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.991, 0, 0, 0, 0, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   63.26% {
     -webkit-transform: matrix3d(1.007, 0, 0, 0, 0, 1.007, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1.007, 0, 0, 0, 0, 1.007, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   85.49% {
     -webkit-transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
+
   100% {
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -697,6 +713,7 @@ Bounce Loading Animation
     -webkit-transform: translateY(0) scaleY(0.8);
     transform: translateY(0) scaleY(0.8);
   }
+
   to {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
@@ -708,6 +725,7 @@ Bounce Loading Animation
     -webkit-transform: translateY(0) scaleY(0.8);
     transform: translateY(0) scaleY(0.8);
   }
+
   to {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);

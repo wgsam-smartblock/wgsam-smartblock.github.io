@@ -22,17 +22,12 @@ h1 {
 }
 
 /* Floating Chat icon */
-
 #chat-circle {
   position: fixed;
   z-index: 1;
   bottom: 50px;
   right: 50px;
   background-color: rgba(0, 0, 0, 0.3);
-  /* background: #5A5EB9; */
-  /* background: linear-gradient(120deg, rgb(36, 138, 82), rgb(37, 114, 135)); */
-  /* width: 50px;
-  height: 50px;   */
   border-radius: 50%;
   color: white;
   padding: 25px;
@@ -52,7 +47,6 @@ h1 {
 }
 
 /* Chat Box */
-
 .chatbox {
   background: #fafafa;
   min-height: 450px;
@@ -236,7 +230,6 @@ h1 {
 }
 
 /* Input placeholder */
-
 ::-webkit-input-placeholder {
   color: #dedede;
   opacity: 1;
@@ -290,7 +283,6 @@ h1 {
 }
 
 /* ----- Animation ----- */
-
 @keyframes bob {
   10% {
     transform: translateY(-10px);

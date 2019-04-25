@@ -1,14 +1,12 @@
-body, body .messages-content .message.typing::after, body .messages-content .message.typing span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+* {
+  outline: none;
 }
 
-body .chat-title::after, body .action-box::after {
-  content: "";
-  display: block;
-  clear: both;
+body,
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
 html {
@@ -23,18 +21,23 @@ body {
   letter-spacing: 1px;
 }
 
-* {
-  outline: none;
+body,
+body .messages-content .message.typing::after,
+body .messages-content .message.typing span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-body, html {
-  margin: 0;
-  height: 100%;
-  width: 100%;
+body .chat-title::after,
+body .action-box::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /* custom scroll */
-
 .mCSB_container {
   margin: 0 !important;
 }
@@ -49,15 +52,12 @@ body, html {
 }
 
 /* Floating msg icon */
-
 #chat-circle {
   position: fixed;
   z-index: 1;
   bottom: 50px;
   right: 50px;
   background-color: rgba(0, 0, 0, 0.3);
-  /* background: #5A5EB9; */
-  /* background: linear-gradient(120deg, rgb(36, 138, 82), rgb(37, 114, 135)); */
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -79,7 +79,6 @@ body, html {
 }
 
 /* Chat Box */
-
 .chat {
   display: flex;
   position: fixed;
@@ -137,7 +136,6 @@ body, html {
 }
 
 /* Message container  */
-
 .messages {
   width: 100%;
   height: calc(100% - 90px);
@@ -244,7 +242,8 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
-.messages-content .message.typing span::before, body .messages-content .message.typing span::after {
+.messages-content .message.typing span::before,
+body .messages-content .message.typing span::after {
   content: "";
   border-radius: 50%;
   width: 3px;
@@ -265,14 +264,15 @@ body, html {
 }
 
 /* End of Message container  */
-
 .action-box {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 40px;
 }
 
-.action-box-input, .action-box-attch, .action-box-submit {
+.action-box-input,
+.action-box-attch,
+.action-box-submit {
   box-sizing: border-box;
   border: 0;
   float: left;
@@ -298,7 +298,6 @@ body, html {
 }
 
 /* Attachment & Send Button */
-
 .action-box-attch {
   width: 40px;
   height: 40px;
@@ -324,14 +323,15 @@ button.action-box-submit:active {
 }
 
 /* ----- Animation ----- */
-
 @keyframes ball {
   0% {
     margin-top: 0;
   }
+
   20% {
     margin-top: 3px;
   }
+
   80% {
     margin-top: -5px;
   }
@@ -341,12 +341,15 @@ button.action-box-submit:active {
   0% {
     transform: scale(0.6);
   }
+
   30% {
     transform: scale(1.1);
   }
+
   60% {
     transform: scale(0.9);
   }
+
   100% {
     transform: scale(1);
   }
