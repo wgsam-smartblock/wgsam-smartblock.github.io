@@ -1,8 +1,37 @@
 (function () {
     window.expand = function () {
         $("#live-chat").toggle('scale');
-        $(".chat-container").toggle('scale');
+        $(".toggle-livechat").toggle('scale');
     };
+
+    $("#hide_merchant").on("click", function () {
+        $(".marchant-panel").addClass("active");
+        $("#merchant-search").addClass("active");
+        console.log("open")
+        // $(this).toggleClass("active");
+    });
+
+    $("#show_merchant").on("click", function () {
+        $(".marchant-panel").removeClass("active");
+        $("#merchant-search").removeClass("active");
+        console.log("open")
+        // $(this).toggleClass("active");
+    });
+
+    $('.feature-container ul li').click(function () {
+        $('.feature-container ul li').removeClass('selected');
+        $(this).addClass('selected');
+    });
+
+    $('.marchant-panel ul li').click(function () {
+        $('.marchant-panel ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.user-panel ul li').click(function () {
+        $('.user-panel ul li').removeClass('active');
+        $(this).addClass('active');
+    });
 
     var chat = {
         messageToSend: '',
@@ -72,7 +101,7 @@
         },
         getCurrentTime: function () {
             return new Date().toLocaleTimeString().
-            replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3");
+                replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3");
         },
         getRandomItem: function (arr) {
             return arr[Math.floor(Math.random() * arr.length)];
