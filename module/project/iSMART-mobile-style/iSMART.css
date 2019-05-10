@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+    overflow-x: hidden;
+    background: #2BAD9B;
+    background: linear-gradient(to top, #E0E5FF 0%, #D6F5FF 40%, #EFFBFF);
+    min-height: 800px;
+    height: 100vh;
+}
+
+.mobile-tmp a:hover,
+.mobile-tmp a:active,
+.mobile-tmp a:focus,
+.mobile-tmp input:hover,
+.mobile-tmp input:active,
+.mobile-tmp input:focus,
+.mobile-tmp button:hover,
+.mobile-tmp button:active,
+.mobile-tmp button:focus {
+    outline: 0;
+}
+
+.shell {
+    background: url("img/iphone.png") center center/cover no-repeat;
+    padding: 100px 80px 120px 70px;
+}
+
+.acc {
+    /* Force Hardware Acceleration */
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.flex-center {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    height: 550px;
+    width: 300px;
+    overflow: hidden;
+    background: #2BAD9B;
+    position: relative;
+}
+
+.navbar-header {
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    z-index: 3;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    background: #2BAD9B;
+}
+
+.navbar-header .fa {
+    position: relative;
+    z-index: 3;
+    font-size: 15pt;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.left-icon {
+    margin: 0 20px;
+    width: 24px;
+    height: 24px;
+}
+
+.right-icon {
+    margin: 0 20px;
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-header .title {
+    position: relative;
+    z-index: 3;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header-wallpaper {
+    height: 135px;
+    width: 100%;
+    position: relative;
+}
+
+.header-wallpaper .bck_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("img/lanscape.jpg") center/cover no-repeat;
+    width: 100%;
+    height: 135px;
+}
+
+.header-wallpaper .info {
+    position: absolute;
+    left: 0;
+    color: #fff;
+    z-index: 2;
+    font-size: 10pt;
+    text-align: center;
+    max-width: 400px;
+    padding: 0 10px;
+    transition: opacity .1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.header-wallpaper .info .circle {
+    background: url("https://image.ibb.co/cPnfpv/avatar.jpg") center center/cover no-repeat;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.header-wallpaper .info .title {
+    font-size: 16pt;
+}
+
+.navTab {
+    width: 100%;
+    z-index: 3;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navTab button {
+    width: 50%;
+    border: none;
+    height: 50px;
+    font-size: 0.7em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.liveChat {
+    background: rgb(181, 221, 250);
+    color: black;
+}
+
+.contactUs {
+    background: rgb(203, 138, 233);
+    color: black;
+}
+
+.data-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.data-list.block .item {
+    width: calc(50% - 30px);
+}
+
+.data-list.list .item {
+    width: calc(100% - 30px);
+}
+
+.data-list-member.list .item {
+    width: calc(100% - 30px);
+}
+
+.data-list.block .item {
+    align-items: center;
+    background-color: rgb(245, 243, 243);
+    color: #000;
+    display: flex;
+    font-size: 3rem;
+    height: 30px;
+    justify-content: center;
+    max-height: 200px;
+    min-height: 120px;
+    margin: 20px auto 5px;
+    border-radius: 20px;
+}
+
+.data-list.list .item {
+    align-items: center;
+    background-color: rgb(245, 243, 243);
+    color: #000;
+    display: flex;
+    font-size: 1rem;
+    height: 30px;
+    justify-content: center;
+    max-height: 200px;
+    min-height: 10px;
+    width: 100%;
+    border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.data-list-member.list .item {
+    align-items: center;
+    background-color: rgb(245, 243, 243);
+    color: #000;
+    display: flex;
+    font-size: 1rem;
+    height: 30px;
+    justify-content: center;
+    max-height: 200px;
+    min-height: 10px;
+    width: 100%;
+    border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+/*  2nd layout */
+.justify-content-row {
+    justify-content: space-between;
+}
+
+.navbar-header .header-img {
+    width: 50px;
+    height: 40px;
+}
+
+.navbar-header .header-img img {
+    width: 100%;
+}
+
+.info-content-top {
+    background: #fff;
+    height: 100%;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+.info-content-bottom {
+    position: absolute;
+    top: 100px;
+    background: #fff;
+    height: 100%;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+.footer-wraper {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.top-wraper {
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+    width: 100%;
+}
+
+.navbar {
+    color: #fff;
+    height: 60px;
+    width: 100%;
+    z-index: 3;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #9cbdb9;
+}
+
+.navbar .footer-icon {
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    cursor: pointer;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    mask: url(#mymask);
+    -webkit-mask-box-image: url(http://media.smartcubesoft.com/mobile/ISMARTMY/MASTER/MENU_ICON/image/dark_settings_120.png);
+}
+
+.tab {
+    background-color: black;
+}
+
+.tab:hover{
+    background-color: red;
+}
