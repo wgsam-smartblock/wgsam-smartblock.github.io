@@ -1,0 +1,113 @@
+body {
+    background: rgb(216, 221, 221);
+}
+
+/* announce card */
+.wrap {
+    height: 100%;
+}
+
+h1 {
+    color: #111;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fa-times-thin:before {
+    content: '\00d7';
+}
+
+
+.card {
+    display: flex;
+    flex: 0 0 auto;
+    background: #fff;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 7px 55px rgba(0, 0, 0, 0.12), 0 3px 3px rgba(0, 0, 0, 0.24);
+    transition: all 0.4s;
+    /* max-width: 700px; */
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 80px -25px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s;
+}
+
+.card-pic-wrap {
+    align-items: center;
+    display: flex;
+    width: 200px;
+    flex: 0 0 auto;
+    position: relative;
+    /* background: #e7b81c; */
+    text-align: center;
+}
+
+.card-pic-wrap img {
+    padding: 20px;
+    max-width: 100%;
+}
+
+.card-content {
+    padding: 1.2em 1em 0.9em;
+}
+
+.card-content .addChart {
+    float: right;
+    margin: 1.5em 0 0.5em;
+}
+
+.anc-title {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 0 1em;
+}
+
+.date-txt {
+    margin-top: 32px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.month-txt {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+.link-btn {
+    background: #e7b81c;
+    color: #fff;
+    padding: 0 20px;
+    height: 35px;
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    line-height: 35px;
+    display: inline-block;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fa-cart-plus {
+    font-size: 20px;
+}
+
+.link-btn:hover {
+    background: #9e9e9e;
+    color: #fff;
+
+}
+
+.right {
+    padding: 10px 20px 10px 10px;
+}
+
+/* end of announce card */
