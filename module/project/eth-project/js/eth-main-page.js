@@ -4,6 +4,18 @@
             scrollInertia: 150,
             theme: 'minimal-dark'
         });
+
+        $(".counter-value").each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 3500,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
     });
 
     $(window).scroll(function () {
@@ -11,7 +23,6 @@
         // $header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
         $header.toggleClass('scrolled', $(this).scrollTop() > 20);
     });
-
 })(jQuery);
 
 // particlesJS - bg matirx animation
