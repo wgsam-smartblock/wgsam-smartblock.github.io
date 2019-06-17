@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/main-body-content.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="assests/vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -82,16 +84,21 @@
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-5 col-md-12 col-sm-12 order-lg-first text-lg-left text-center">
                                     <div class="banner-caption mt-3 mt-lg-0">
-                                        <div class="caption-head">
-                                            <h1>PrivateNet Blockchain Explorer</h1>
-                                        </div>
-                                        <div class="caption-text text-caption-color ">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas atque
-                                                rerum iure at maxime ratione nisi nihil amet voluptate tempore. Cumque
-                                                fuga ipsam veniam, dignissimos voluptas quaerat itaque culpa nostrum?
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nihil
+                                        <div class="caption-content">
+                                            <div class="caption-head">
+                                                <h1>PrivateNet Blockchain Explorer</h1>
+                                            </div>
+                                            <div class="caption-text text-caption-color ">
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+                                                    atque
+                                                    rerum iure at maxime ratione nisi nihil amet voluptate tempore.
+                                                    Cumque
+                                                    fuga ipsam veniam, dignissimos voluptas quaerat itaque culpa
+                                                    nostrum?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nihil
 
-                                            </p>
+                                                </p>
+                                            </div>
                                         </div>
                                         <div class="caption-search">
                                             <form>
@@ -104,7 +111,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-7 col-md-12 col-sm-12 order-first">
-                                    <img class="img-fluid" src="assests/images/blockchain-bg-img.png" alt="banner">
+                                    <img class="img-fluid banner-header-img" src="assests/images/blockchain-bg-img.png"
+                                        alt="banner">
                                 </div>
                             </div>
                         </div>
@@ -126,39 +134,39 @@
                     <p class="sub-title text-sub-color text-center text-uppercase">Current Summary</p>
                 </div>
 
-                <div class="row text-md-left text-center">
+                <div class="row text-md-left text-center aaa">
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                        <div class="block-info-box text-sub-color eth">
+                        <div class="block-info-box text-sub-color eth anim-blck-info">
                             <h6>ETH PRICE</h6>
                             <p>$888.8999</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                        <div class="block-info-box text-sub-color mrk">
+                        <div class="block-info-box text-sub-color mrk anim anim-blck-info">
                             <h6>MARKET CAP</h6>
                             <p>268,323,3888</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                        <div class="block-info-box text-sub-color blck">
+                        <div class="block-info-box text-sub-color blck anim-blck-info">
                             <h6>Block</h6>
                             <p>7858550</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                        <div class="block-info-box text-sub-color txns">
+                        <div class="block-info-box text-sub-color txns anim-blck-info">
                             <h6>TRANSACTIONS</h6>
                             <p>485.91221M</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                        <div class="block-info-box text-sub-color diff">
+                        <div class="block-info-box text-sub-color diff anim-blck-info">
                             <h6>DIFFICULTY</h6>
                             <p>2078.17800TH</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
-                        <div class="block-info-box text-sub-color hash">
+                        <div class="block-info-box text-sub-color hash anim-blck-info">
                             <h6>HASH RATE</h6>
                             <p>16k GH/s</p>
                         </div>
@@ -955,7 +963,7 @@
     <footer class="py-4 bg-default">
         <div class="container text-center text-md-left">
             <div class="row text-center text-md-left mt-3 pb-3">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-main">
                     <h6 class="text-uppercase mb-4 font-weight-bold">ETH</h6>
                     <p class="text-footer-sub-color">Here you can use rows and columns to organize your footer content.
                         Lorem
@@ -967,7 +975,7 @@
 
                 <hr class="w-100 clearfix d-md-none">
 
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-camp">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Company</h6>
                     <p>
                         <a class="text-footer-sub-color" href="#!">XXXXXXX</a>
@@ -985,7 +993,7 @@
 
                 <hr class="w-100 clearfix d-md-none">
 
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 footer-community">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Community</h6>
                     <p>
                         <a class="text-footer-sub-color" href="#!">Your Account</a>
@@ -1003,7 +1011,7 @@
 
                 <hr class="w-100 clearfix d-md-none">
 
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 footer-contact">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
                     <div class="text-footer-sub-color">
                         <p>
@@ -1020,7 +1028,7 @@
 
             <hr>
 
-            <div class="row d-flex align-items-center">
+            <div class="row footer-media d-flex align-items-center">
                 <div class="col-md-7 col-lg-8">
                     <p class="text-center text-md-left">© 2018 Copyright
                         <a href="#">
@@ -1031,7 +1039,7 @@
 
                 <!-- Social Media Grid -->
                 <div class="col-md-5 col-lg-4 ml-lg-0">
-                    <div class="text-center text-md-right">
+                    <div class=" text-center text-md-right">
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item">
                                 <a class="btn-floating btn-sm mx-1">

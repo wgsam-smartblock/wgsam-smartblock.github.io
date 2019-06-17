@@ -14,8 +14,8 @@
 
 })(jQuery);
 
-particlesJS('particles-bg',
-    {
+// particlesJS - bg matirx animation
+particlesJS('particles-bg', {
         "particles": {
             "number": {
                 "value": 40,
@@ -124,3 +124,105 @@ particlesJS('particles-bg',
     function () {
         console.log('callback - particles.js config loaded');
     });
+
+// TweenMax Effect
+
+TweenMax.from(".header-logo", 1, {
+    delay: 0.2,
+    opacity: 0,
+    y: -20,
+    ease: Expo.easeInOut
+});
+
+TweenMax.from(".navbar-nav", 1.2, {
+    delay: 0.4,
+    opacity: 0,
+    y: -30,
+    ease: Expo.easeInOut
+});
+
+TweenMax.from(".caption-content", 1.6, {
+    delay: 0.1,
+    opacity: 0,
+    y: 30,
+    ease: Expo.easeInOut
+});
+
+TweenMax.from(".caption-search", 1.6, {
+    delay: 0.2,
+    opacity: 0,
+    y: 40,
+    ease: Expo.easeInOut
+});
+
+TweenMax.from(".banner-header-img", 1.8, {
+    delay: 0.3,
+    opacity: 0,
+    y: 40,
+    ease: Expo.easeInOut
+});
+
+// ScrollReveal effect
+
+var slideUp = {
+    origin: 'bottom',
+    delay: 100,
+    distance: '50px',
+    easing: 'ease-in-out',
+};
+
+var slideUpSlow = {
+    origin: 'bottom',
+    delay: 120,
+    distance: '100px',
+    easing: 'ease-in-out',
+};
+
+var slideRight = {
+    origin: 'left',
+    delay: 30,
+    distance: '20px',
+    easing: 'ease-in-out',
+};
+
+var slideUpFooter1 = {
+    origin: 'bottom',
+    delay: 100,
+    distance: '20px',
+    easing: 'ease-in-out',
+};
+var slideUpFooter2 = {
+    origin: 'bottom',
+    delay: 150,
+    distance: '40px',
+    easing: 'ease-in-out',
+};
+var slideUpFooter3 = {
+    origin: 'bottom',
+    delay: 200,
+    distance: '60px',
+    easing: 'ease-in-out',
+};
+var slideUpFooter4 = {
+    origin: 'bottom',
+    delay: 250,
+    distance: '80px',
+    easing: 'ease-in-out',
+};
+
+var slideUpFooter5 = {
+    origin: 'bottom',
+    delay: 0,
+    distance: '30px',
+    easing: 'ease-in-out',
+};
+
+ScrollReveal().reveal('.block-header', slideUp);
+ScrollReveal().reveal('.anim-blck-info', slideRight);
+ScrollReveal().reveal('.block-txns-table', slideUpSlow);
+
+ScrollReveal().reveal('.footer-main', slideUpFooter1);
+ScrollReveal().reveal('.footer-camp', slideUpFooter2);
+ScrollReveal().reveal('.footer-community', slideUpFooter3);
+ScrollReveal().reveal('.footer-contact', slideUpFooter4);
+ScrollReveal().reveal('.footer-media', slideUpFooter5);
