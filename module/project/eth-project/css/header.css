@@ -121,7 +121,7 @@ li.dropdown:hover>.dropdown-menu {
 /* ---- banner-caption ---- */
 
 .caption-head h1 {
-    font-family: Quicksand;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
 
@@ -148,7 +148,7 @@ li.dropdown:hover>.dropdown-menu {
 }
 
 .caption-search form input {
-    font-family: "Quicksand";
+    font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
     width: 100%;

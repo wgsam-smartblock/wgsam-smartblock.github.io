@@ -5,17 +5,19 @@
             theme: 'minimal-dark'
         });
 
-        $(".counter-value").each(function () {
-            $(this).prop('Counter', 0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 3500,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-            });
+        // custom formatting example
+        $('.count-number').data('countToOptions', {
+            formatter: function (value, options) {
+                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+            }
         });
+        $('.timer').each(count);
+
+        function count(options) {
+            var $this = $(this);
+            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+            $this.countTo(options);
+        }
     });
 
     $(window).scroll(function () {

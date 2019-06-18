@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PrivateNet Blockchain </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="assests/vendor/malihu-custom-scrollbar-plugin/css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="assests/vendor/bootstrap/css/bootstrap.min.css">
@@ -14,7 +16,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main-body-content.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="assests/vendor/jquery/jquery-3.4.1.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
@@ -138,37 +140,43 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                         <div class="block-info-box text-sub-color eth anim-blck-info">
                             <h6>ETH PRICE</h6>
-                            <p>$ <span class="counter-value">8889999</span></p>
+                            <p>$ <span class="timer count-title count-number" data-to="2589000"
+                                    data-speed="3500"></span></p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                         <div class="block-info-box text-sub-color mrk anim anim-blck-info">
                             <h6>MARKET CAP</h6>
-                            <p><span class="counter-value">2683233888</span></p>
+                            <p><span class="timer count-title count-number" data-to="2683233888"
+                                    data-speed="3500"></span></p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                         <div class="block-info-box text-sub-color blck anim-blck-info">
                             <h6>Block</h6>
-                            <p><span class="counter-value">7858550</span></p>
+                            <p><span class="timer count-title count-number" data-to="7858550" data-speed="3500"></span>
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                         <div class="block-info-box text-sub-color txns anim-blck-info">
                             <h6>TRANSACTIONS</h6>
-                            <p><span class="counter-value">48591221</span> M</p>
+                            <p><span class="timer count-title count-number" data-to="48591221" data-speed="3500"></span>
+                                M</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                         <div class="block-info-box text-sub-color diff anim-blck-info">
                             <h6>DIFFICULTY</h6>
-                            <p><span class="counter-value">207817800</span> TH</p>
+                            <p><span class="timer count-title count-number" data-to="207817800"
+                                    data-speed="3500"></span> TH</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 my-2">
                         <div class="block-info-box text-sub-color hash anim-blck-info">
                             <h6>HASH RATE</h6>
-                            <p><span class="counter-value">1600</span> k GH/s</p>
+                            <p><span class="timer count-title count-number" data-to="1600" data-speed="3500"></span> k
+                                GH/s</p>
                         </div>
                     </div>
                 </div>
@@ -956,9 +964,6 @@
         <div class="nk-ovm shape-dot shape-b"></div>
     </div>
 
-
-
-
     <!-- Footer -->
     <footer class="py-4 bg-default">
         <div class="container text-center text-md-left">
@@ -1071,9 +1076,11 @@
 
     <!-- script -->
     <script src="assests/vendor/popper/popper.min.js"></script>
+    <script src="assests/vendor/jquery/jquery-3.4.1.min.js"></script>
     <script src="assests/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="assests/vendor/particles/particles.js"></script>
     <script src="assests/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assests/vendor/number-counter/number-counter.js"></script>
     <script src="js/eth-main-page.js"></script>
 </body>
 
