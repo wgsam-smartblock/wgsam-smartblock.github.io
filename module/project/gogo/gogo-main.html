@@ -14,15 +14,20 @@
     <link rel="stylesheet" href="css/global-style.css">
     <link rel="stylesheet" href="css/gogo-main.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
-    <section class="header-banner-section d-flex align-items-center justify-content-center bg-red-theme min-vh-100">
+    <section
+        class="header-banner-section bg-parallax-main d-flex align-items-center justify-content-center bg-red-theme min-vh-100">
         <div class="gm-content">
             <div class="container">
                 <div class="row">
                     <div class="gm-wrap text-center text-white">
-                        <img class="img-fluid main-logo-sz" src="assests/images/gogo-rewards-logo.png" alt="gogo-logo">
+                        <img class="gogo-logo img-fluid main-logo-sz" src="assests/images/gogo-rewards-logo.png"
+                            alt="gogo-logo">
                         <div class="gm-caption">
                             <h1 class="m-4 font-weight-bold">Simply Dummy Text</h1>
                             <div class="gm-text m-4">Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -30,11 +35,11 @@
                             </div>
                             <div class="gm-barcode-wrap d-inline-flex">
                                 <div class="app-store">
-                                    <div class="qr-store-img">
+                                    <div class="qr-code qr-store-img">
                                         <img class="img-fluid barcode-sz m-3" src="assests/images/app-store-barcode.png"
                                             alt="app-barcode">
                                     </div>
-                                    <div class="qr-store-link">
+                                    <div class="qr-link qr-store-link">
                                         <a href="#" class="link">
                                             <img class="img-fluid store-sz" src="assests/images/app-store.png"
                                                 alt="app-store">
@@ -42,11 +47,11 @@
                                     </div>
                                 </div>
                                 <div class="google-play">
-                                    <div class="qr-play-img">
+                                    <div class="qr-code qr-play-img">
                                         <img class="img-fluid barcode-sz m-3"
                                             src="assests/images/google-play-barcode.png" alt="google-play-barcode">
                                     </div>
-                                    <div class="qr-play-link">
+                                    <div class="qr-link qr-play-link">
                                         <a href="#" class="link">
                                             <img class="img-fluid store-sz" src="assests/images/google-play.png"
                                                 alt="google-play">
@@ -65,12 +70,12 @@
     <section class="guidance-section min-vh-100">
         <div class="guidance-content">
             <div class="container">
-                <div class="text-center text-uppercase mb-5">
+                <div class="text-center text-uppercase mb-5 anim-fs">
                     <h2 class="text-title text-uppercase">HOW IT WORKS</h2>
                 </div>
 
                 <div class="row text-center pt-4">
-                    <div class="col-md-4 col-sm-12">
+                    <div class="col-md-4 col-sm-12 anim-nd">
                         <img class="img-fluid gd-img-sz" src="assests/images/member.png" alt="">
                         <div class="g-wrap">
                             <div class="g-header text-uppercase py-3">
@@ -85,7 +90,7 @@
                                 REGISTER</button>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12">
+                    <div class="col-md-4 col-sm-12 anim-thd">
                         <img class="img-fluid gd-img-sz" src="assests/images/agent.png" alt="">
                         <div class="g-wrap">
                             <div class="g-header text-uppercase py-3">
@@ -99,7 +104,7 @@
                                 onclick="window.location.href = './gogo-reg-agent.html';">REGISTER</button>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12">
+                    <div class="col-md-4 col-sm-12 anim-frd">
                         <img class="img-fluid gd-img-sz" src="assests/images/merchant.png" alt="">
                         <div class="g-wrap">
                             <div class="g-header text-uppercase py-3">
@@ -120,13 +125,13 @@
     <section class="benifit-section bg-dgrey-theme min-vh-100">
         <div class="benifit-content">
             <div class="container">
-                <div class="text-center text-uppercase mb-5">
+                <div class="text-center text-uppercase mb-5 anim-fs">
                     <h2 class="text-title text-uppercase">WHAT IS BENEFIT</h2>
                 </div>
 
                 <div class="row pt-4">
                     <div class="col-md-4 col-sm-12">
-                        <div class="b-wrap pr-3">
+                        <div class="b-wrap pr-3 anim-nd">
                             <div class="b-header py-4">
                                 <h4 class="text-title">Member Subscription</h1>
                             </div>
@@ -156,7 +161,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <div class="b-wrap pr-3">
+                        <div class="b-wrap pr-3 anim-thd">
                             <div class="b-header py-4">
                                 <h4 class="text-title">Agent Subscription</h1>
                             </div>
@@ -186,7 +191,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <div class="b-wrap pr-3">
+                        <div class="b-wrap pr-3 anim-frd">
                             <div class="b-header py-4">
                                 <h4 class="text-title">Merchant Subscription</h1>
                             </div>
@@ -222,10 +227,10 @@
     <section class="info-section-one">
         <div class="row info-content">
             <div class="col-lg-6 d-lg-block d-none bg-orange-theme">
-                <img src="assests/images/merchant-list.png" alt="merchant">
+                <img class="anim-fs" src="assests/images/merchant-list.png" alt="merchant">
             </div>
             <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <div class="info-wrap">
+                <div class="info-wrap anim-frd">
                     <h2 class="text-title">Simply dummy text</h2>
                     <p class="lead text-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown
@@ -236,7 +241,7 @@
             </div>
 
             <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <div class="info-wrap">
+                <div class="info-wrap anim-frd">
                     <h2 class="text-title">Simply dummy text</h2>
                     <p class="lead text-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown
@@ -246,7 +251,7 @@
                 </div>
             </div>
             <div class="col-lg-6 d-lg-block d-none bg-orange-theme">
-                <img src="assests/images/landing.png" alt="landing">
+                <img class="anim-fs" src="assests/images/landing.png" alt="landing">
             </div>
         </div>
         </div>
@@ -255,10 +260,10 @@
     <section class="aboutus-section bg-dgrey-theme">
         <div class="benifit-content">
             <div class="container">
-                <div class="text-center text-uppercase mb-5">
+                <div class="text-center text-uppercase mb-5 anim-fs">
                     <h2 class="text-title text-uppercase">WHO WE ARE</h2>
                 </div>
-                <div class="text-center text-white">
+                <div class="text-center text-white anim-thd">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley
                         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
@@ -277,13 +282,14 @@
             </div>
             <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <div class="info-wrap">
-                    <h2 class="text-title">We’d Love To Hear From You</h2>
-                    <p class="text-desc pt-2 pb-3">Comments, questions, suggestions? Connect with us today and let us
+                    <h2 class="text-title anim-fs">We’d Love To Hear From You</h2>
+                    <p class="text-desc pt-2 pb-3 anim-nd">Comments, questions, suggestions? Connect with us today and
+                        let us
                         know how we can help . Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry. Lorem Ipsum has been the industry’s standard </p>
                     <hr>
-                    <h4 class="text-title pt-4 pb-3">GOGO REWARDS SDH BHD</h4>
-                    <div class="contact-wrap text-desc">
+                    <h4 class="text-title pt-4 pb-3 anim-thd">GOGO REWARDS SDH BHD</h4>
+                    <div class="contact-wrap text-desc anim-frd">
                         <p>
                             <img class="list" src="./assests/images/merchant-icon-location.png" alt="">
                             <span>61B & 63B, Jalan SS22/19,Damansara Jaya, 47400 Petaling Jaya, Selangor,
@@ -308,38 +314,38 @@
         </div>
     </section>
 
-    <section class="reg-section bg-parallax">
+    <section class="reg-section bg-parallax-reg">
         <div class="benifit-content">
             <div class="container">
-                <div class="text-center text-uppercase mb-4">
+                <div class="text-center text-uppercase mb-4 anim-fs">
                     <h2 class="text-title text-uppercase">We’ve been waiting for you…</h2>
                 </div>
-                <div class="text-center text-white">
+                <div class="text-center text-white anim-nd">
                     <p>Write to us and we will contact you as soon as possible to answer your questions.</p>
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
+                        <div class="form-group anim-nd">
                             <label class="text-white text-uppercase" for="name">Name*</label>
                             <input type="text" name="name" id="name" class="name">
                             <span class="error"></span>
                         </div>
                     </div>
                     <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
+                        <div class="form-group anim-thd">
                             <label class="text-white text-uppercase" for="mobile">Mobile*</label>
                             <input type="text" name="mobile" id="mobile" class="mobile">
                             <span class="error"></span>
                         </div>
                     </div>
                     <div class="col-md-3 col-xs-12">
-                        <div class="form-group">
+                        <div class="form-group anim-frd">
                             <label class="text-white text-uppercase" for="email">Email</label>
                             <input type="text" name="email" id="email" class="email">
                             <span class="error"></span>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-12">
+                    <div class="col-md-3 col-xs-12 anim-frd">
                         <button class="btn g-btn-submit btn-bolder text-uppercase my-4" type="button">Submit</button>
                     </div>
                 </div>
@@ -373,6 +379,7 @@
     <script src="assests/vendor/jquery/jquery-3.4.1.min.js"></script>
     <script src="assests/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="js/gogo-main.js"></script>
+    <script src="js/animation-effect.js"></script>
 </body>
 
 </html>

@@ -61,6 +61,13 @@ ul li {
     border-bottom: 5px solid #fff;
 }
 
+.bg-parallax-main {
+    background: url(../assests/images/bg-main.png) center center no-repeat;
+    background-attachment: fixed;
+    /* background-position: top center !important; */
+    background-size: cover;
+}
+
 /* ---- Button ---- */
 
 .g-btn {

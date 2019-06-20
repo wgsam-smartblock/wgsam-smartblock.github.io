@@ -15,15 +15,18 @@
     <link rel="stylesheet" href="css/register-header.css">
     <link rel="stylesheet" href="css/gogo-reg.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
-    <section class="header-reg-section d-flex align-items-center justify-content-center bg-red-theme">
+    <section class="header-reg-section bg-parallax-main d-flex align-items-center justify-content-center bg-red-theme">
         <div class="reg-content">
             <div class="container">
                 <div class="row">
                     <div class="reg-wrap text-center text-white">
-                        <img class="img-fluid reg-logo-sz" src="assests/images/gogo-rewards-logo.png" alt="gogo-logo">
+                        <img class="gogo-logo img-fluid reg-logo-sz" src="assests/images/gogo-rewards-logo.png" alt="gogo-logo">
                         <div class="reg-caption">
                             <h1 class="m-4 font-weight-bold text-uppercase">SIGN UP AS MECHANT</h1>
                         </div>
@@ -37,16 +40,16 @@
         <div class="container">
             <div class="row reg-content">
                 <div class="col-lg-6">
-                    <img src="assests/images/reg-agent.png" alt="merchant">
+                    <img class="reg-banner" src="assests/images/reg-agent.png" alt="merchant">
                 </div>
                 <div class="col-lg-6 d-flex align-items-center justify-content-center">
                     <div class="reg-wrap">
-                        <div class="col-12 m-3">
+                        <div class="col-12 m-3 reg-box-a">
                             <h2 class="text-title">Interested to join as Merchant.</h2>
                             <p class="text-desc pt-2 pb-3">Full up your contact, we will contact you as soon as
                                 possible.
                         </div>
-                        <div class="col-12 m-3">
+                        <div class="col-12 m-3 reg-box-b">
                             <div class="reg-input-box">
                                 <div class="reg-input-label float-left">
                                     <span class="text-label text-uppercase">Name</span>
@@ -56,7 +59,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 m-3">
+                        <div class="col-12 m-3 reg-box-c">
                             <div class="reg-input-box">
                                 <div class="reg-input-label float-left">
                                     <span class="text-label text-uppercase">Mobile</span>
@@ -67,7 +70,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 m-3">
+                        <div class="col-12 m-3 reg-box-d">
                             <div class="reg-input-box">
                                 <div class="reg-input-label float-left">
                                     <span class="text-label text-uppercase">ADDRESS</span>
@@ -78,7 +81,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 m-3">
+                        <div class="col-12 m-3 reg-box-e">
                             <button class="btn g-btn-reg btn-orange text-uppercase my-2 font-weight-bold"
                                 type="button">SUBMIT</button>
                         </div>
@@ -115,6 +118,8 @@
     <script src="assests/vendor/jquery/jquery-3.4.1.min.js"></script>
     <script src="assests/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="js/gogo-main.js"></script>
+    <script src="js/animation-effect.js"></script>
+
 </body>
 
 </html>

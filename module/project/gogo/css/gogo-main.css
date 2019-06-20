@@ -83,7 +83,7 @@
     width: 18px;
 }
 
-.bg-parallax {
+.bg-parallax-reg {
     background: url(../assests/images/phone-bg.jpg) center center no-repeat;
     background-attachment: fixed;
     background-position: top center !important;
