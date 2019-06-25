@@ -7,19 +7,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lottie SVG JSON</title>
     <link rel="stylesheet" href="lottie-svg.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <section class="min-vh-100">
+        <div class="container">
 
-    <div id="container">
-        <h1><img src="../../../img/lottie.svg" width="65" height="65" style="vertical-align:middle">
-            Lottie SVG Json Website Testing</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam possimus, accusantium dolores ad distinctio
-            sunt laborum at quis non optio quae temporibus deleniti aperiam ab atque odio reiciendis. Modi, quidem.</p>
-        <div id="lottie"></div>
-    </div>
+            <div class="col-md-6">
+                <h1><img src="../../../img/lottie.svg" width="65" height="65" style="vertical-align:middle">
+                    Lottie SVG Json Website Testing</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam possimus, accusantium dolores ad
+                    distinctio
+                    sunt laborum at quis non optio quae temporibus deleniti aperiam ab atque odio reiciendis. Modi,
+                    quidem.
+                </p>
+                <div id="lottie"></div>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <div class="attribute-video">
+                    <video
+                        style="-webkit-mask-box-image: url('https://freepik.cdnpk.net/img/video/unicorn/mask.svg'); mask-image: url('https://freepik.cdnpk.net/img/video/unicorn/mask.svg'); width:300px"
+                        autoplay loop>
+                        <source src="https://freepik.cdnpk.net/img/video/unicorn/video.mp4" type="video/mp4">
+                    </video>
+                    <video id="myVideo"
+                        style="-webkit-mask-box-image: url('https://freepik.cdnpk.net/img/video/unicorn/mask.svg'); mask-image: url('https://freepik.cdnpk.net/img/video/unicorn/mask.svg'); width:300px">
+                        <source src="https://freepik.cdnpk.net/img/video/unicorn/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <hr>
+                <button class="btn btn-default text-uppercase my-2 font-weight-bold " type="button"
+                    onclick="enableLoop()">Play</button>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin_light.js"></script>
+    <script src="./lottie-svg.js"></script>
     <script>
         var animation = bodymovin.loadAnimation({
             container: document.getElementById('lottie'),
