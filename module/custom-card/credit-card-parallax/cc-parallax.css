@@ -1,0 +1,142 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: auto\9;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+.container {
+    width: 958px;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.mainContent {
+    position: relative;
+    overflow: hidden;
+    color: #444444;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: normal;
+    border-bottom: 1px solid #E9EAEC;
+}
+
+.mainContent .creditCards {
+    position: absolute;
+    top: 160px;
+    right: -100px;
+}
+
+.mainContent .creditCards .relative {
+    position: relative;
+}
+
+.mainContent .creditCards .master {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -webkit-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+}
+
+.mainContent .creditCards .amex {
+    position: absolute;
+    top: 50px;
+    right: -60px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -webkit-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+}
+
+.mainContent .creditCards .visa {
+    position: absolute;
+    top: 100px;
+    right: -45px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -webkit-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+}
+
+.mainContent .padding {
+    margin: 0;
+    padding: 5px 23px 40px 23px;
+}
+
+.mainContent h2 {
+    margin: 40px 0 15px 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.mainContent p {
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.mainContent .padding .left {
+    float: left;
+    width: 390px;
+    margin-right: 35px;
+}
+
+.mainContent .padding .right {
+    float: left;
+    width: 390px;
+}
+
+div.clear {
+    clear: both;
+    line-height: 0;
+}
+
+.mainContent .padding .left {
+    float: left;
+    width: 390px;
+    margin-right: 35px;
+}
+
+.mainContent .padding .right {
+    float: left;
+    width: 390px;
+}
+
+.blueGradient {
+    /* background-image: url(https://pci.trustwave.com/templates/aquiline-new/css/../img/overview_bg.jpg); */
+    background-repeat: repeat-x;
+    background-position: bottom;
+    border-bottom: none;
+}
