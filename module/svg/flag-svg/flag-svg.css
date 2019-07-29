@@ -4,11 +4,6 @@ body {
 }
 
 .stick-layer {
-    /* position: relative;
-    z-index: 2;
-    width: 222px;
-    top: 21px;
-    margin: auto; */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -17,14 +12,6 @@ body {
     margin: auto;
     width: 222px;
     z-index: 2;
-}
-
-#stick {
-    /* width: 222px;
-    top: 0;
-    position: relative;
-    z-index: 2;
-    left: 0; */
 }
 
 .logo-layer {
@@ -34,11 +21,17 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    width: 120px;
+    width: 115px;
     z-index: 2;
 }
 
 .flag {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+}
+
+.flag2 {
     width: 200px;
     height: 300px;
     margin: auto;
@@ -49,7 +42,22 @@ body {
     -moz-animation: oscill 2s ease-in-out infinite alternate;
     -ms-animation: oscill 2s ease-in-out infinite alternate;
     animation: oscill 2s ease-in-out infinite alternate;
-    /* background: url("../flag-svg/img/red-flag-portrait.svg"); */
+    background: url("../flag-svg/img/red-flag-portrait.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: 200px 100%;
+    position: relative;
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+}
+
+.flag-element2 {
+    -webkit-animation: oscill 2s ease-in-out infinite alternate;
+    -moz-animation: oscill 2s ease-in-out infinite alternate;
+    -ms-animation: oscill 2s ease-in-out infinite alternate;
+    animation: oscill 2s ease-in-out infinite alternate;
     background: url("../flag-svg/img/red-badge-flag.svg");
     background-position: center;
     background-repeat: no-repeat;
