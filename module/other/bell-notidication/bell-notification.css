@@ -1,0 +1,191 @@
+body,
+html {
+    background-color: #1C293E;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: -50px;
+    overflow: hidden;
+}
+
+body .add-notification,
+html .add-notification {
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+}
+
+body .add-notification button,
+html .add-notification button {
+    transform: translate(-50%);
+    background: #fff;
+    border: 2px solid #fff;
+    color: #1C293E;
+    border-radius: 100px;
+    height: 50px;
+    padding: 0 15px;
+    font-family: "Open Sans";
+    outline: none;
+    transition: all 150ms ease-in-out;
+    font-weight: 600;
+}
+
+body .add-notification button:hover,
+html .add-notification button:hover {
+    background: #1C293E;
+    color: #fff;
+    cursor: pointer;
+} 
+
+.bell {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bell .bell-top {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 0 0;
+}
+
+.bell .bell-top:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: inherit;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.bell .bell-top:after {
+    content: '';
+    border-bottom: 10px solid #fff;
+    border-left: 8px solid #1C293E;
+    border-right: 8px solid #1C293E;
+    height: 0;
+    width: 50px;
+    position: absolute;
+    left: -8px;
+    bottom: -10px;
+}
+
+.bell .bell-bot {
+    width: 16px;
+    height: 8px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -23px;
+    border-radius: 0 0 16px 16px;
+}
+
+.bell .bell-notification {
+       background: #FF4C12;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: -25px;
+    top: -12px;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    opacity: 0;
+}
+
+.bell-top-anim {
+    animation: abanico 1000ms ease-in-out;
+    transform-origin: top;
+}
+
+.bell-bot-anim {
+    animation: badalo 1000ms ease-in-out;
+}
+
+.new-not {
+    animation: popup 500ms forwards;
+}
+
+@keyframes abanico {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    7.5% {
+        transform: rotate(25deg);
+    }
+
+    30% {
+        transform: rotate(-25deg);
+    }
+
+    45% {
+        transform: rotate(15deg);
+    }
+
+    58% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(5deg);
+    }
+
+    87.5% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes badalo {
+    15% {
+        transform: translateX(-25px) rotate(7deg);
+    }
+
+    32.5% {
+        transform: translateX(10px) rotate(-7deg);
+    }
+
+    50% {
+        transform: translateX(-15px) rotate(7deg);
+    }
+
+    65% {
+        transform: translateX(5px) rotate(-7deg);
+    }
+
+    80% {
+        transform: translateX(-15px) rotate(7deg);
+    }
+
+    90% {
+        transform: translateX(0px) rotate(-7deg);
+    }
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
