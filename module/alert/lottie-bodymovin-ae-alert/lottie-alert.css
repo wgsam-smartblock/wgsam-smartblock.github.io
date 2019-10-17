@@ -9,6 +9,8 @@ body {
     justify-items: center;
 }
 
-#testingAnimation {
+#success,
+#error,
+#warning {
     width: 250px;
 }
