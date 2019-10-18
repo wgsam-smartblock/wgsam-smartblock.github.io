@@ -68,7 +68,7 @@
 
     donutty.prototype.createFragments = function () {
 
-        var namespace = "http://www.w3.org/2000/svg",
+        var namespace = "https://www.w3.org/2000/svg",
             viewbox = this.options.radius * 2 + this.options.thickness + (this.options.padding * 2),
             values = this.getDashValues(),
             rotateExtra = this.options.round ? this.options.thickness / 3 : 0,
