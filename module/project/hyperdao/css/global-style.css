@@ -49,15 +49,15 @@ img {
     font-size: 0.8rem;
 }
 
-.font-size-2{
+.font-size-2 {
     font-size: 1.1rem;
 }
 
-.font-size-3{
+.font-size-3 {
     font-size: 1.2rem;
 }
 
-.font-size-4{
+.font-size-4 {
     font-size: 0.6rem;
 }
 
@@ -150,7 +150,8 @@ img {
     color: #96a8b6 !important;
 }
 
-/* Border*/
+/* ---- Border ---- */
+
 .border-round {
     border-radius: 10px;
 }
@@ -169,6 +170,12 @@ img {
 
 .border-bottom-left-radius {
     border-bottom-left-radius: 10px;
+}
+
+/* ---- Page Padding ---- */
+
+.main-content-section {
+    padding: 100px 0 10px;
 }
 
 /* ---- Responsive Media ---- */
