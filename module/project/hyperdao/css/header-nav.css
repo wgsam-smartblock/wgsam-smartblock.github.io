@@ -22,6 +22,15 @@
     box-shadow: 0 0 20px 0 rgba(18, 24, 58, 0.08);
 }
 
+.nav-main-show {
+    z-index: 49;
+    width: 100%;
+    position: fixed !important;
+    padding: 0;
+    background-image: linear-gradient(180deg, #382094, #212121);
+    box-shadow: 0 0 20px 0 rgba(18, 24, 58, 0.08);
+}
+
 .navbar {
     letter-spacing: .1rem;
 }
@@ -43,6 +52,10 @@
     box-shadow: 0 0 20px 0 rgba(18, 24, 58, 0.08);
 }
 
+.rsp-mb {
+    display: none;
+}
+
 li.dropdown:hover>.dropdown-menu {
     display: block;
 }
@@ -61,4 +74,11 @@ li.dropdown:hover>.dropdown-menu {
     background-color: #00CFFF;
     border-left: 3px solid #1941B1;
     font-weight: bold;
+}
+
+
+@media (max-width: 992px) {
+    .rsp-mb {
+        display: block;
+    }
 }

@@ -8,7 +8,7 @@
 html,
 body {
     height: 100%;
-    background-color: #fff;
+    font-family: "Nanum Gothic", sans-serif !important;
 }
 
 body {
@@ -45,6 +45,22 @@ img {
     font-family: 'Montserrat', sans-serif !important;
 }
 
+.font-size-1 {
+    font-size: 0.8rem;
+}
+
+.font-size-2{
+    font-size: 1.1rem;
+}
+
+.font-size-3{
+    font-size: 1.2rem;
+}
+
+.font-size-4{
+    font-size: 0.6rem;
+}
+
 /* ---- BG Theme ---- */
 
 .bg-banner {
@@ -52,7 +68,7 @@ img {
     background-repeat: no-repeat;
 }
 
-.bg-wallet {
+.bg-wallet-banner {
     background-image: linear-gradient(180deg, #BFF3FF, #69E1FF);
 }
 
@@ -60,6 +76,28 @@ img {
     background: url(../assests/images/pattern-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.bg-hyperdao {
+    background: url(../assests/images/bg-body.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-wallet-card {
+    background: url(../assests/images/bg-wallet.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-purple {
+    background-color: #382094;
 }
 
 .bg-footer {
@@ -78,6 +116,14 @@ img {
 
 .white {
     color: #fff;
+}
+
+.grey-1 {
+    color: #646464;
+}
+
+.blue-1 {
+    color: #38D5FC;
 }
 
 .darkblue-1 {
@@ -102,6 +148,27 @@ img {
 
 .text-footer-sub-color {
     color: #96a8b6 !important;
+}
+
+/* Border*/
+.border-round {
+    border-radius: 10px;
+}
+
+.border-left-line {
+    border-left: 2px solid #ffff !important;
+}
+
+.border-right-line {
+    border-right: 2px solid #fff !important;
+}
+
+.border-bottom-right-radius {
+    border-bottom-right-radius: 10px;
+}
+
+.border-bottom-left-radius {
+    border-bottom-left-radius: 10px;
 }
 
 /* ---- Responsive Media ---- */
