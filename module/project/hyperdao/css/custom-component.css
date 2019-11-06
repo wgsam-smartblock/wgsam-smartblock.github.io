@@ -140,3 +140,9 @@ input[type=radio]:checked~label {
 .tabs .tab-content.js-active {
     display: block;
 }
+
+/* ----- Custom Table ----- */
+th {
+    font-weight: 200;
+    word-break: break-word;
+}
