@@ -243,7 +243,17 @@ hr.hr-space {
     padding-right: 30px;
 }
 
-.content-header{
+button:hover {
+    background: #006CFF;
+    color: #ffff;
+}
+
+button:active {
+    background: #006CFF;
+    color: #ffff;
+}
+
+.content-header {
     width: 100%;
 }
 
@@ -268,7 +278,7 @@ hr.hr-space {
         width: 100%;
     }
 
-    .btn-3{
+    .btn-3 {
         /* font-size: 0.6rem; */
     }
 }
