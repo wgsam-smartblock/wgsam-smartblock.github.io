@@ -170,6 +170,10 @@ img {
     border-right: 2px solid #fff !important;
 }
 
+.border-btm-line {
+    border-bottom: 1px solid #F1F1F1;
+}
+
 .border-bottom-right-radius {
     border-bottom-right-radius: 10px;
 }
@@ -219,6 +223,10 @@ hr.hr-space {
     border: none;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.content-header{
+    width: 100%;
 }
 
 /* ---- List ui li ---- */

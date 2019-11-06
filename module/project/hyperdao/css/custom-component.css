@@ -12,6 +12,13 @@
     width: 100%;
 }
 
+.custom-input-2 {
+    padding: 0.8rem .75rem;
+    border: 1px solid #E3E3E3;
+    border-radius: .25rem;
+    width: 100%;
+}
+
 /*--- Radio Button ----*/
 
 .radio-btn-selection ul {
@@ -97,10 +104,6 @@ input[type=radio]:checked~label {
     margin-bottom: 2em;
     margin-top: 1em;
     width: 100%;
-}
-
-.tabs .tab-navigation {
-    border-bottom: 1px solid #F1F1F1;
 }
 
 .tabs .tab-navigation ul {
