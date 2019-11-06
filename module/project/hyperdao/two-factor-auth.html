@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HyperDao - Refer A Friend Page</title>
+    <title>HyperDao - TWO FACTOR AUTHENTICATION (2FA) Page</title>
 
     <!-- font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/header-nav.css">
     <link rel="stylesheet" href="css/features-nav.css">
     <link rel="stylesheet" href="css/custom-component.css">
+    <link rel="stylesheet" href="css//two-factor-auth.css">
+
 
     <!-- plugin -->
     <link rel="stylesheet" href="assests/vendor/bootstrap/css/bootstrap.min.css">
@@ -171,79 +173,76 @@
                     <div class="media align-items-center">
                         <img class="features-header-icon" src="assests/images/img-diamond-no-shadow.png"
                             alt="Diamond Icon">
-                        <span class="px-4 m-0 blue-1 text-uppercase font-weight-bold font-2 h4">Refer a friend</span>
+                        <span class="px-4 m-0 blue-1 text-uppercase font-weight-bold font-2 h4">TWO FACTOR
+                            AUTHENTICATION (2FA)</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Refer Friend Content -->
-            <div class="refer-fr-content my-3">
+            <!-- TWO FACTOR AUTHENTICATION Content -->
+            <div class="two-factor-auth-content my-3">
                 <div class="row font-size-1  py-4 px-1">
                     <div class="col-12">
                         <div class=" px-5 py-4 border-round bg-purple">
                             <div class="row">
                                 <div class="col-md-6 col-12">
-                                    <img src="assests/images/img-refer-a-friend.png" alt="Refer a Friend">
+                                    <img src="assests/images/img-2fa.png" alt="Refer a Friend">
                                 </div>
                                 <div class="col-md-6 col-12 pt-4 px-2">
-                                    <div class="py-3">
+                                    <div class="pt-3">
                                         <div class="row align-items-center">
-                                            <div class="col-md-4 col-sm-12">
-                                                <span class="white pr-5">User ID : </span>
-                                            </div>
-                                            <div class="col-md-8 col-sm-12">
-                                                <input class="my-2 custom-input" type="text"
-                                                    placeholder="Enter password" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="radio-btn-field">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <span class="white pr-5">Package option: </span>
-                                            </div>
-                                            <div class="col-md-8 radio-btn-selection p-0">
-                                                <ul>
-                                                    <li>
-                                                        <input type="radio" id="f-option" name="selector">
-                                                        <label for="f-option">Transaction amount 10000 per block</label>
-                                                        <div class="check"></div>
+                                            <div class="b-info text-white">
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-3">
+                                                        <img class="list" src="./assests/images/icons/mark-list.svg"
+                                                            alt="Mark List" height="30" width="30">
+                                                        Secure your account using your smart phone.
                                                     </li>
-
-                                                    <li>
-                                                        <input type="radio" id="s-option" name="selector">
-                                                        <label for="s-option">Amount without decimal</label>
-                                                        <div class="check"></div>
+                                                    <li class="mb-3">
+                                                        <img class="list" src="./assests/images/icons/mark-list.svg"
+                                                            alt="Mark List" height="30" width="30">
+                                                        With 2FA enabled, your smart phone must be present to access
+                                                        your account.
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <img class="list" src="./assests/images/icons/mark-list.svg"
+                                                            alt="Mark List" height="30" width="30">
+                                                        Hackers can’t access your account even if your email & password
+                                                        is compromised.
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <img class="list" src="./assests/images/icons/mark-list.svg"
+                                                            alt="Mark List" height="30" width="30">
+                                                        Sleep well at night knowing that your money is safe.
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="py-3">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-4">
-                                                <span class="white pr-5">Language : </span>
-                                            </div>
-                                            <div class="col-md-8 form-select">
-                                                <select class="form-control custom-select mt-2">
-                                                    <option>English</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
+                                    <hr>
+                                    <div class="otp-token-field">
+                                        <div class="white">
+                                            <p>Do you have Google Authenticator or other OTP token apps installed on
+                                                your device?</p>
+                                            <p>Add your 2FA Token by scanning the following QR code</p>
+                                            <p>If you are unable to scan the QR code, manually add your token by
+                                                entering or copying the following key:</p>
+                                        </div>
+                                        <button class="btn-1 btn-color-1 font-2 text-uppercase mt-4 mb-2">
+                                            NR4DC22IMJCUM4KEJY2XE3LMGJRXIMLQ </button>
+                                        <div class="text-center">
+                                            <a href="#" class="white">Tap Code to Copy</a>
                                         </div>
                                     </div>
-                                    <div class="py-3">
-                                        <div class="row align-items-center">
-                                            <div class="col-md-4">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <button class="btn-1 btn-color-1 font-2 text-uppercase my-4">
-                                                    GENERATE REFERRAL LINK </button>
-                                            </div>
+                                    <div class="code-submition-field py-3">
+                                        <div class="white">
+                                            <p>After adding, enter the code you see on Google Authenticator to check if
+                                                your token was added correctly.</p>
                                         </div>
+                                        <input class="my-2 custom-input" type="text" placeholder="Enter Code" />
+                                        <button class="btn-1 btn-color-1 font-2 text-uppercase my-4">
+                                            SUBMIT
+                                        </button>
                                     </div>
                                 </div>
                             </div>
