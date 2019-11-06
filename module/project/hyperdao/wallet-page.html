@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/global-style.css">
     <link rel="stylesheet" href="css/header-nav.css">
     <link rel="stylesheet" href="css/features-nav.css">
+    <link rel="stylesheet" href="css/custom-component.css">
     <link rel="stylesheet" href="css/wallet-page.css">
 
     <!-- plugin -->
@@ -184,8 +185,7 @@
                             <div class="col-lg-3 col-sm-12 my-3 my-sm-1">
                                 <div class="media">
                                     <div class="mr-3">
-                                        <img class="nav-icon" src="assests/images/icons/bitcoin.svg"
-                                            alt="Bitcoin">
+                                        <img class="nav-icon" src="assests/images/icons/bitcoin.svg" alt="Bitcoin">
                                     </div>
                                     <div class="media-body white">
                                         <span class="font-weight-light">Bitcoin</span>
@@ -252,7 +252,8 @@
                                 <span class="font-size-4 white">Deposit</span>
                             </div>
                             <div class="col-4 bg-purple border-right-line p-3">
-                                <img class="trx-icon" src="assests/images/icons/withdrawal-icon.svg" alt="Withdraw Icon">
+                                <img class="trx-icon" src="assests/images/icons/withdrawal-icon.svg"
+                                    alt="Withdraw Icon">
                                 <span class="font-size-4 white">Withdrawal</span>
                             </div>
                             <div class="col-4 bg-purple p-3 border-bottom-right-radius">
@@ -282,7 +283,8 @@
                                 <span class="font-size-4 white">Deposit</span>
                             </div>
                             <div class="col-4 bg-purple border-right-line p-3">
-                                <img class="trx-icon" src="assests/images/icons/withdrawal-icon.svg" alt="Withdraw Icon">
+                                <img class="trx-icon" src="assests/images/icons/withdrawal-icon.svg"
+                                    alt="Withdraw Icon">
                                 <span class="font-size-4 white">Withdrawal</span>
                             </div>
                             <div class="col-4 bg-purple p-3 border-bottom-right-radius">
@@ -312,7 +314,8 @@
                                 <span class="font-size-4 white">Deposit</span>
                             </div>
                             <div class="col-4 bg-purple border-right-line p-3">
-                                <img class="trx-icon" src="assests/images/icons/withdrawal-icon.svg" alt="Withdraw Icon">
+                                <img class="trx-icon" src="assests/images/icons/withdrawal-icon.svg"
+                                    alt="Withdraw Icon">
                                 <span class="font-size-4 white">Withdrawal</span>
                             </div>
                             <div class="col-4 bg-purple p-3 border-bottom-right-radius">
@@ -342,7 +345,8 @@
                                 <span class="font-size-4 white">Deposit</span>
                             </div>
                             <div class="col-4 bg-purple border-right-line p-3">
-                                <img class="trx-icon" src="assests/images/icons/withdrawal-icon.svg" alt="Withdraw Icon">
+                                <img class="trx-icon" src="assests/images/icons/withdrawal-icon.svg"
+                                    alt="Withdraw Icon">
                                 <span class="font-size-4 white">Withdrawal</span>
                             </div>
                             <div class="col-4 bg-purple p-3 border-bottom-right-radius">
@@ -366,6 +370,153 @@
                         <img class="features-header-icon" src="assests/images/img-diamond-no-shadow.png"
                             alt="Diamond Icon">
                         <span class="px-4 m-0 blue-1 text-uppercase font-weight-bold font-2 h4">Buy</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUY SEll Content Table -->
+            <div class="buy-sell-list-content my-3">
+                <div class="col-12 border-round bg-white">
+                    <div class="row font-size-1">
+                        <!-- Custom Tab -->
+                        <div class="tabs">
+                            <nav class="tab-navigation">
+                                <ul role="tablist">
+                                    <li role="none">
+                                        <a href="#tab-1" id="tab-button-1" class="tab-button js-active darkblue-2"
+                                            role="tab" aria-selected="true" aria-controls="tab-1"
+                                            data-action="tab-open">USD</a>
+                                    </li>
+                                    <li role="none">
+                                        <a href="#tab-2" id="tab-button-2" class="tab-button darkblue-2" tabindex="-1"
+                                            role="tab" aria-selected="false" aria-controls="tab-2"
+                                            data-action="tab-open">BTC</a>
+                                    </li>
+                                    <li role="none">
+                                        <a href="#tab-3" id="tab-button-3" class="tab-button darkblue-2" tabindex="-1"
+                                            role="tab" aria-selected="false" aria-controls="tab-2"
+                                            data-action="tab-open">ETH</a>
+                                    </li>
+                                    <li role="none">
+                                        <a href="#tab-4" id="tab-button-4" class="tab-button darkblue-2" tabindex="-1"
+                                            role="tab" aria-selected="false" aria-controls="tab-2"
+                                            data-action="tab-open">DAO</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div id="tab-1" class="tab-content js-active" role="tabpanel"
+                                aria-labelledby="tab-button-1">
+                                <div class="row px-3">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="media align-items-sm-center mr-4 mb-1 mb-sm-0">
+                                            <div class="d-none d-sm-flex mr-3">
+                                                <img src="assests/images/bitcon-wallet.svg" alt="Bitcoin" width="60"
+                                                    height="60">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="font-weight-bold font-size-2 darkblue-2 pr-2">
+                                                    BTC / USD
+                                                </span>
+                                                <!-- <span class="d-none d-sm-block"> -->
+                                                Bitcoin / US Dollar
+                                                <!-- </span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="d-flex align-items-sm-center justify-content-end mt-1">
+                                            <div class="text-nowrap">
+                                                Buy BTC with USD at
+                                                <span class="font-weight-bold font-size-2 darkblue-2 pl-2 pr-4">
+                                                    USD 0.12345678</span>
+                                                <button class="table-btn btn-color-1 white font-2 text-uppercase">
+                                                    BUY
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="hr-space">
+                                <div class="row px-3">
+                                    <div class="col-sm-6">
+                                        <div class="media align-items-sm-center mr-4 mb-1 mb-sm-0">
+                                            <div class="d-none d-sm-flex mr-3">
+                                                <img src="assests/images/eth-wallet.svg" alt="Bitcoin" width="60"
+                                                    height="60">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="font-weight-bold font-size-2 darkblue-2 pr-2">
+                                                    ETH / USD
+                                                </span>
+                                                <!-- <span class="d-none d-sm-block"> -->
+                                                Ethereum / US Dollar
+                                                <!-- </span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="d-flex align-items-sm-center justify-content-end mt-1">
+                                            <div class="text-nowrap">
+                                                Buy ETH with USD at
+                                                <span class="font-weight-bold font-size-2 darkblue-2 pl-2 pr-4">
+                                                    USD 0.12345678
+                                                </span>
+                                                <button class="table-btn btn-color-1 white font-2 text-uppercase">
+                                                    BUY
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="hr-space">
+                                <div class="row px-3">
+                                    <div class="col-sm-6">
+                                        <div class="media align-items-sm-center mr-4 mb-1 mb-sm-0">
+                                            <div class="d-none d-sm-flex mr-3">
+                                                <img src="assests/images/hyp-wallet.svg" alt="Bitcoin" width="60"
+                                                    height="60">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="font-weight-bold font-size-2 darkblue-2 pr-2">
+                                                    DAO / USD
+                                                </span>
+                                                <!-- <span class="d-none d-sm-block"> -->
+                                                HyperDAO / US Dollar
+                                                <!-- </span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="d-flex align-items-sm-center justify-content-end mt-1">
+                                            <div class="text-nowrap">
+                                                Buy DAO with USD at
+                                                <span class="font-weight-bold font-size-2 darkblue-2 pl-2 pr-4">
+                                                    USD 0.12345678
+                                                </span>
+                                                <button class="table-btn btn-color-1 white font-2 text-uppercase">
+                                                    BUY
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="hr-space">
+                            </div>
+                            <div id="tab-2" class="tab-content" role="tabpanel" aria-labelledby="tab-button-2">
+                                <div class="p-4">
+                                    <h1>Heading</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                        facilisis vitae purus sit amet viverra. Nulla facilisi. Nulla fermentum diam
+                                        non mi auctor, sed euismod lorem euismod. Vivamus luctus magna non quam
+                                        molestie ornare. Aliquam rhoncus tempus nibh. Curabitur efficitur iaculis
+                                        urna vel laoreet. Quisque ut tempor elit, ut cursus lorem. Mauris sagittis
+                                        urna ligula, convallis tincidunt elit efficitur vel. Integer blandit
+                                        faucibus sem, id semper erat faucibus sit amet. Phasellus luctus sapien nec
+                                        tortor lacinia, ac luctus tellus finibus. In ultricies hendrerit mattis.
+                                        Aenean in leo ut ipsum volutpat volutpat.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -403,6 +554,7 @@
     <script src="assests/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="js/tweenMax-amination.js"></script>
     <script src="js/featues-nav.js"></script>
+    <script src="js/custom-nav-tap.js"></script>
 </body>
 
 </html>

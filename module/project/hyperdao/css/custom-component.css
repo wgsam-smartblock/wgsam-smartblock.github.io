@@ -90,3 +90,50 @@ input[type=radio]:checked~.check::before {
 input[type=radio]:checked~label {
     color: #fff;
 }
+
+/*---- Nav Tab ----*/
+
+.tabs {
+    margin-bottom: 2em;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.tabs .tab-navigation {
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.tabs .tab-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.tabs .tab-navigation .tab-button {
+    /* color: currentColor; */
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+.tabs .tab-navigation .tab-button:focus {
+    background: none;
+}
+
+.tabs .tab-navigation .tab-button.js-active {
+    border-bottom: 3px solid #382094;
+    font-weight: 700;
+}
+
+.tabs .tab-content {
+    display: none;
+    margin-top: 1.5em;
+}
+
+.tabs .tab-content.js-active {
+    display: block;
+}
